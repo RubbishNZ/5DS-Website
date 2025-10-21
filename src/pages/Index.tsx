@@ -6,6 +6,7 @@ import { ArrowRight, Brain, Users, Shield, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
 import AnimatedText from "@/components/AnimatedText";
+import CornerPeel from "@/components/CornerPeel";
 
 const valuePillars = [
   {
@@ -58,6 +59,7 @@ const proofPoints = [
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <CornerPeel />
       <Navigation />
       
       {/* Hero Section */}

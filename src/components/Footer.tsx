@@ -1,27 +1,8 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const [clickCount, setClickCount] = useState(0);
-  const navigate = useNavigate();
-
-  const handleSecretClick = () => {
-    const newCount = clickCount + 1;
-    setClickCount(newCount);
-    
-    if (newCount === 3) {
-      navigate('/auth');
-      setClickCount(0);
-    }
-    
-    // Reset after 2 seconds of no clicks
-    setTimeout(() => {
-      setClickCount(0);
-    }, 2000);
-  };
 
   return (
     <footer className="border-t border-border bg-card">
@@ -35,14 +16,7 @@ const Footer = () => {
         >
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-display font-bold mb-4">
-              Aviora
-              <span 
-                onClick={handleSecretClick}
-                className="cursor-default select-none"
-                aria-hidden="true"
-              >
-                .
-              </span>
+              Aviora.
             </h3>
             <p className="text-muted-foreground max-w-md">
               Empowering organisations to become AI-ready through strategic enablement, 
