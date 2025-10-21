@@ -8,60 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 222 84% 5%;
-    --foreground: 45 25% 95%;
+    --background: 0 0% 98%;
+    --foreground: 222 84% 5%;
 
-    --card: 222 84% 8%;
-    --card-foreground: 45 25% 95%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 5%;
 
-    --popover: 222 84% 8%;
-    --popover-foreground: 45 25% 95%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 5%;
 
-    --primary: 45 25% 95%;
-    --primary-foreground: 222 84% 5%;
+    --primary: 222 84% 5%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 222 84% 12%;
-    --secondary-foreground: 45 25% 95%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 222 84% 5%;
 
-    --muted: 222 40% 15%;
-    --muted-foreground: 45 15% 70%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 222 40% 40%;
 
-    --accent: 217 91% 60%;
-    --accent-foreground: 45 25% 95%;
+    --accent: 225 73% 57%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 45 25% 95%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 222 40% 15%;
-    --input: 222 40% 15%;
-    --ring: 217 91% 60%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 225 73% 57%;
 
     --radius: 0.5rem;
     
     /* Custom design tokens */
-    --accent-purple: 270 50% 65%;
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --accent-purple: 250 65% 65%;
+    --shadow-subtle: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+    --shadow-lift: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-cinematic: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-}
-
-@layer base {
   * {
     @apply border-border;
   }
@@ -73,10 +66,53 @@ All colors MUST be HSL.
   h1, h2, h3, h4, h5, h6 {
     @apply font-display;
   }
+  
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  
+  .cinematic-ease {
+    transition: var(--transition-cinematic);
+  }
+  
+  .smooth-ease {
+    transition: var(--transition-smooth);
+  }
+  
+  .shadow-subtle {
+    box-shadow: var(--shadow-subtle);
+  }
+  
+  .shadow-lift {
+    box-shadow: var(--shadow-lift);
+  }
+  
+  /* Section spacing */
+  .section-spacing {
+    @apply py-36;
+  }
+  
+  @media (max-width: 768px) {
+    .section-spacing {
+      @apply py-20;
+    }
   }
 }
