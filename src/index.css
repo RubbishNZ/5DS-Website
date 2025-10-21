@@ -8,26 +8,20 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 98%;
-    --foreground: 222 84% 5%;
-
+    --background: 0 0% 100%;
+    --foreground: 222 60% 8%;
     --card: 0 0% 100%;
-    --card-foreground: 222 84% 5%;
-
+    --card-foreground: 222 60% 8%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222 84% 5%;
-
-    --primary: 222 84% 5%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 222 84% 5%;
-
-    --muted: 0 0% 96%;
-    --muted-foreground: 222 40% 40%;
-
-    --accent: 225 73% 57%;
-    --accent-foreground: 0 0% 98%;
+    --popover-foreground: 222 60% 8%;
+    --primary: 228 87% 63%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 98%;
+    --secondary-foreground: 222 60% 8%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 222 20% 50%;
+    --accent: 228 87% 63%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
@@ -58,61 +52,29 @@ All colors MUST be HSL.
   * {
     @apply border-border;
   }
-
   body {
-    @apply bg-background text-foreground font-body antialiased;
+    @apply bg-white text-ink;
+    font-family: 'Inter', system-ui, sans-serif;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display;
+    @apply font-display tracking-tightish;
   }
-  
-  /* Smooth scroll behavior */
+
   html {
     scroll-behavior: smooth;
-  }
-  
-  @media (prefers-reduced-motion: reduce) {
-    html {
-      scroll-behavior: auto;
-    }
-    * {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-    }
   }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 0.25s ease;
   }
-  
-  .cinematic-ease {
-    transition: var(--transition-cinematic);
-  }
-  
-  .smooth-ease {
-    transition: var(--transition-smooth);
-  }
-  
-  .shadow-subtle {
-    box-shadow: var(--shadow-subtle);
-  }
-  
-  .shadow-lift {
-    box-shadow: var(--shadow-lift);
-  }
-  
-  /* Section spacing */
-  .section-spacing {
-    @apply py-36;
-  }
-  
-  @media (max-width: 768px) {
-    .section-spacing {
-      @apply py-20;
-    }
+  .link-underline:hover {
+    background-size: 100% 1px;
   }
 }

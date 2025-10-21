@@ -2,11 +2,12 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { ArrowRight, Brain, Users, Shield, Zap } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
-import AnimatedText from "@/components/AnimatedText";
 import CornerPeel from "@/components/CornerPeel";
+import { lineStagger, staggerContainer, fadeUp } from "@/lib/motion";
 
 const valuePillars = [
   {
@@ -57,163 +58,208 @@ const proofPoints = [
 ];
 
 const Index = () => {
+  const reduce = useReducedMotion();
+  
+  const heroLines = [
+    "Lean, enterprise-grade",
+    "AI enablement.",
+    "Readiness, training, and automation—",
+    "designed to move the needle."
+  ];
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
       <CornerPeel />
       <Navigation />
       
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center px-6 pt-20">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center space-y-8">
-            <AnimatedText stagger className="text-6xl md:text-8xl lg:text-9xl font-display font-bold leading-[1.1] text-balance">
-              Transform Your Organisation with AI Enablement
-            </AnimatedText>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8, duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-              className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto"
+      <section className="max-w-6xl mx-auto px-6 md:px-8 pt-28 pb-section md:pb-section">
+        <div>
+          {heroLines.map((line, i) => (
+            <motion.h1
+              key={i}
+              initial="hidden"
+              animate="show"
+              variants={reduce ? { hidden: {opacity: 0}, show: {opacity: 1} } : lineStagger}
+              transition={{ delay: i * 0.08 }}
+              className="font-display text-5xl md:text-6xl leading-tight text-ink"
             >
-              We help organisations become AI-ready through strategic guidance, 
-              comprehensive training, and responsible implementation.
-            </motion.p>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.2, duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8"
-            >
-              <Button asChild variant="hero" size="lg">
-                <Link to="/contact">
-                  Book a Discovery Meeting <ArrowRight className="ml-2" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link to="/services">Explore Our Services</Link>
-              </Button>
-            </motion.div>
-          </div>
+              {line}
+            </motion.h1>
+          ))}
+          
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+            className="mt-6 text-lg md:text-xl text-ink/70 max-w-2xl"
+          >
+            We help organisations get AI-ready, upskill teams, and operationalise value—safely.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.55 }}
+          >
+            <Button asChild className="mt-8 h-12 px-7 rounded-xl bg-accent text-white hover:brightness-110">
+              <Link to="/contact">Book a Discovery Meeting</Link>
+            </Button>
+          </motion.div>
         </div>
       </section>
 
       {/* Value Pillars */}
-      <section className="section-spacing px-6 bg-card/50">
-        <div className="container mx-auto max-w-6xl">
-          <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-16">
-              Why Aviora?
-            </h2>
-          </AnimatedSection>
+      <section className="max-w-6xl mx-auto px-6 md:px-8 py-sectionSm md:py-section">
+        <motion.div 
+          variants={staggerContainer} 
+          initial="hidden" 
+          whileInView="show" 
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ staggerChildren: 0.08, delayChildren: 0.15 }}
+        >
+          <motion.h2 
+            variants={fadeUp}
+            transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="text-4xl md:text-5xl font-display text-ink text-center mb-16"
+          >
+            Why Aviora?
+          </motion.h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {valuePillars.map((pillar, index) => {
               const Icon = pillar.icon;
               return (
-                <AnimatedSection key={pillar.title} delay={index * 0.15}>
-                  <div className="text-center space-y-4 p-6 hover:bg-accent/5 rounded-lg transition-all duration-400 hover:-translate-y-1 group">
-                    <div className="w-16 h-16 mx-auto bg-accent/10 rounded-full flex items-center justify-center transition-transform duration-400 group-hover:scale-110">
-                      <Icon className="w-8 h-8 text-accent" />
-                    </div>
-                    <h3 className="text-xl font-display font-bold">
-                      {pillar.title}
-                    </h3>
-                    <p className="text-muted-foreground">
-                      {pillar.description}
-                    </p>
-                  </div>
-                </AnimatedSection>
+                <motion.div 
+                  key={pillar.title} 
+                  variants={fadeUp}
+                  transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+                >
+                  <Card className="rounded-2xl bg-white shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-200">
+                    <CardHeader className="space-y-4">
+                      <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center">
+                        <Icon className="w-6 h-6 text-accent" />
+                      </div>
+                      <CardTitle className="text-xl text-ink">{pillar.title}</CardTitle>
+                      <CardDescription className="text-ink/70">
+                        {pillar.description}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                </motion.div>
               );
             })}
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* Proof Section */}
-      <section className="section-spacing px-6">
-        <div className="container mx-auto max-w-5xl">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <AnimatedSection>
-              <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-                Proven Results
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Our clients achieve measurable outcomes through our practical, 
-                human-centered approach to AI enablement.
-              </p>
-              <Button asChild variant="hero" size="lg">
-                <Link to="/case-studies">
-                  View Case Studies <ArrowRight className="ml-2" />
-                </Link>
-              </Button>
-            </AnimatedSection>
-            
-            <div className="space-y-4">
-              {proofPoints.map((point, index) => (
-                <AnimatedSection key={index} delay={index * 0.1}>
-                  <div className="bg-card border border-border p-6 rounded-lg flex items-start gap-4 transition-all duration-400 hover:shadow-lift hover:-translate-y-1">
+      <section className="max-w-6xl mx-auto px-6 md:px-8 py-sectionSm md:py-section">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-4xl md:text-5xl font-display text-ink mb-6">
+              Proven Results
+            </h2>
+            <p className="text-lg md:text-xl text-ink/70 mb-8">
+              Our clients achieve measurable outcomes through our practical, 
+              human-centered approach to AI enablement.
+            </p>
+            <Button asChild className="h-12 px-7 rounded-xl bg-accent text-white hover:brightness-110">
+              <Link to="/case-studies">
+                View Case Studies <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </motion.div>
+          
+          <motion.div 
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            transition={{ staggerChildren: 0.08, delayChildren: 0.15 }}
+            className="space-y-4"
+          >
+            {proofPoints.map((point, index) => (
+              <motion.div 
+                key={index} 
+                variants={fadeUp}
+                transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+              >
+                <Card className="rounded-2xl bg-white shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-200">
+                  <CardHeader className="flex flex-row items-start gap-4">
                     <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0 mt-2" />
-                    <p className="text-lg">{point}</p>
-                  </div>
-                </AnimatedSection>
-              ))}
-            </div>
-          </div>
+                    <p className="text-ink/70">{point}</p>
+                  </CardHeader>
+                </Card>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
       {/* How We Work */}
-      <section className="section-spacing px-6 bg-card/50">
-        <div className="container mx-auto max-w-6xl">
-          <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-16">
-              How We Work
-            </h2>
-          </AnimatedSection>
+      <section className="max-w-6xl mx-auto px-6 md:px-8 py-sectionSm md:py-section">
+        <motion.div 
+          variants={staggerContainer} 
+          initial="hidden" 
+          whileInView="show" 
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ staggerChildren: 0.08, delayChildren: 0.15 }}
+        >
+          <motion.h2 
+            variants={fadeUp}
+            transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="text-4xl md:text-5xl font-display text-ink text-center mb-16"
+          >
+            How We Work
+          </motion.h2>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {processSteps.map((step, index) => (
-              <AnimatedSection key={step.number} delay={index * 0.2}>
-                <div className="relative h-full">
-                  <div className="bg-card border border-border p-8 rounded-lg transition-all duration-400 hover:border-accent hover:shadow-lift hover:-translate-y-1 h-full">
-                    <span className="text-5xl font-display text-accent mb-4 block">
-                      {step.number}
-                    </span>
-                    <h3 className="text-2xl font-display font-bold mb-4">
-                      {step.title}
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed">
+              <motion.div 
+                key={step.number} 
+                variants={fadeUp}
+                transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+              >
+                <Card className="rounded-2xl bg-white shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-200 h-full">
+                  <CardHeader className="space-y-4">
+                    <div className="text-sm text-ink/50 tracking-wide">{step.number}</div>
+                    <CardTitle className="text-2xl text-ink">{step.title}</CardTitle>
+                    <CardDescription className="text-ink/70 leading-relaxed">
                       {step.description}
-                    </p>
-                  </div>
-                  {index < processSteps.length - 1 && (
-                    <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-0.5 bg-border" />
-                  )}
-                </div>
-              </AnimatedSection>
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* CTA Section */}
-      <section className="section-spacing px-6">
-        <div className="container mx-auto max-w-4xl text-center">
-          <AnimatedSection>
-            <h2 className="text-5xl md:text-7xl font-display font-bold mb-6">
-              Ready to Begin?
-            </h2>
-            <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-              Book a free 30-minute discovery meeting. No commitment required — 
-              just an open conversation about your AI enablement journey.
-            </p>
-            <Button asChild variant="hero" size="lg">
-              <Link to="/contact">Book a Discovery Meeting</Link>
-            </Button>
-          </AnimatedSection>
-        </div>
+      <section className="max-w-4xl mx-auto px-6 md:px-8 py-sectionSm md:py-section text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-4xl md:text-6xl font-display text-ink mb-6">
+            Ready to Begin?
+          </h2>
+          <p className="text-lg md:text-xl text-ink/70 mb-10 max-w-2xl mx-auto">
+            Book a free 30-minute discovery meeting. No commitment required — 
+            just an open conversation about your AI enablement journey.
+          </p>
+          <Button asChild className="h-12 px-7 rounded-xl bg-accent text-white hover:brightness-110">
+            <Link to="/contact">Book a Discovery Meeting</Link>
+          </Button>
+        </motion.div>
       </section>
 
       <Footer />

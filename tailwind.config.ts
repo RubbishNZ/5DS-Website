@@ -14,10 +14,16 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['Playfair Display', 'serif'],
-        body: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        display: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
+        ink: '#0B1020',
+        accent: {
+          DEFAULT: '#4F6AF5',
+          muted: '#7C74F0',
+        },
+        surface: '#FAFAFA',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -62,10 +68,22 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
       },
+      boxShadow: {
+        soft: '0 8px 24px rgba(0,0,0,0.06)',
+        hover: '0 14px 28px rgba(0,0,0,0.10)',
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        xl2: '1rem',
+      },
+      letterSpacing: {
+        tightish: '-0.01em'
+      },
+      spacing: {
+        section: '9rem',
+        sectionSm: '5rem',
       },
       keyframes: {
         "accordion-down": {
