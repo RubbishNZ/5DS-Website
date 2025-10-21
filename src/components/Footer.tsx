@@ -1,9 +1,27 @@
 import { Link } from "react-router-dom";
-
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const [clickCount, setClickCount] = useState(0);
+  const navigate = useNavigate();
+
+  const handleSecretClick = () => {
+    const newCount = clickCount + 1;
+    setClickCount(newCount);
+    
+    if (newCount === 3) {
+      navigate('/auth');
+      setClickCount(0);
+    }
+    
+    // Reset after 2 seconds of no clicks
+    setTimeout(() => {
+      setClickCount(0);
+    }, 2000);
+  };
 
   return (
     <footer className="border-t border-border bg-card">
@@ -16,7 +34,16 @@ const Footer = () => {
           className="grid grid-cols-1 md:grid-cols-4 gap-8"
         >
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-display font-bold mb-4">Aviora</h3>
+            <h3 className="text-2xl font-display font-bold mb-4">
+              Aviora
+              <span 
+                onClick={handleSecretClick}
+                className="cursor-default select-none"
+                aria-hidden="true"
+              >
+                .
+              </span>
+            </h3>
             <p className="text-muted-foreground max-w-md">
               Empowering organisations to become AI-ready through strategic enablement, 
               comprehensive training, and responsible implementation.
@@ -26,66 +53,66 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Navigation</h4>
             <ul className="space-y-2">
-            <li>
-              <Link 
-                to="/" 
-                className="text-muted-foreground hover:text-accent transition-all duration-300 relative group inline-block"
-              >
-                Home
-                <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
-              </Link>
-            </li>
-            <li>
-              <Link 
-                to="/services" 
-                className="text-muted-foreground hover:text-accent transition-all duration-300 relative group inline-block"
-              >
-                What We Do
-                <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
-              </Link>
-            </li>
-            <li>
-              <Link 
-                to="/case-studies" 
-                className="text-muted-foreground hover:text-accent transition-all duration-300 relative group inline-block"
-              >
-                Proof
-                <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
-              </Link>
-            </li>
-            <li>
-              <Link 
-                to="/about" 
-                className="text-muted-foreground hover:text-accent transition-all duration-300 relative group inline-block"
-              >
-                About
-                <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
-              </Link>
-            </li>
+              <li>
+                <Link 
+                  to="/" 
+                  className="text-muted-foreground hover:text-accent transition-all duration-300 relative group inline-block"
+                >
+                  Home
+                  <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/services" 
+                  className="text-muted-foreground hover:text-accent transition-all duration-300 relative group inline-block"
+                >
+                  What We Do
+                  <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/case-studies" 
+                  className="text-muted-foreground hover:text-accent transition-all duration-300 relative group inline-block"
+                >
+                  Proof
+                  <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/about" 
+                  className="text-muted-foreground hover:text-accent transition-all duration-300 relative group inline-block"
+                >
+                  About
+                  <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2">
-            <li>
-              <Link 
-                to="/contact" 
-                className="text-muted-foreground hover:text-accent transition-all duration-300 relative group inline-block"
-              >
-                Get in Touch
-                <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
-              </Link>
-            </li>
-            <li>
-              <Link 
-                to="/contact" 
-                className="text-muted-foreground hover:text-accent transition-all duration-300 relative group inline-block"
-              >
-                Book a Meeting
-                <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
-              </Link>
-            </li>
+              <li>
+                <Link 
+                  to="/contact" 
+                  className="text-muted-foreground hover:text-accent transition-all duration-300 relative group inline-block"
+                >
+                  Get in Touch
+                  <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/contact" 
+                  className="text-muted-foreground hover:text-accent transition-all duration-300 relative group inline-block"
+                >
+                  Book a Meeting
+                  <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
+                </Link>
+              </li>
             </ul>
           </div>
         </motion.div>
