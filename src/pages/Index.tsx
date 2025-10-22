@@ -12,23 +12,23 @@ import { lineStagger, staggerContainer, fadeUp } from "@/lib/motion";
 const valuePillars = [
   {
     icon: Brain,
-    title: "AI Readiness",
-    description: "Comprehensive assessments that reveal where you are and map the path forward.",
+    title: "Strategic Modernization",
+    description: "We assess your systems, processes, and readiness—then design a pragmatic roadmap for evolution.",
   },
   {
     icon: Users,
-    title: "Workforce Enablement",
-    description: "Training programs that build confidence and capability across your organisation.",
+    title: "Human-Centered Enablement",
+    description: "Training and tools that amplify your team's potential, not replace it.",
   },
   {
     icon: Shield,
-    title: "Responsible Implementation",
-    description: "Governance frameworks ensuring ethical, compliant, and sustainable AI adoption.",
+    title: "Responsible Innovation",
+    description: "Ethical frameworks and governance that protect your people, data, and reputation.",
   },
   {
     icon: Zap,
-    title: "Measurable Outcomes",
-    description: "Practical solutions delivering tangible value and competitive advantage.",
+    title: "Tangible Progress",
+    description: "Intelligent solutions that deliver measurable value and competitive advantage.",
   },
 ];
 
@@ -51,20 +51,20 @@ const processSteps = [
 ];
 
 const proofPoints = [
-  "AI readiness scores improved by 5+ points on average",
-  "Training programs with 90%+ participant confidence ratings",
-  "Automation projects delivering ROI within 6-12 months",
-  "Zero compliance incidents across governance implementations",
+  "Organizations see 40% faster time-to-value through our readiness programs",
+  "Teams report 90%+ confidence after completing our enablement training",
+  "Automation projects consistently deliver ROI within 6-12 months",
+  "Zero compliance incidents across our governance implementations",
 ];
 
 const Index = () => {
   const reduce = useReducedMotion();
   
   const heroLines = [
-    "Lean, enterprise-grade",
-    "AI enablement.",
-    "Readiness, training, and automation—",
-    "designed to move the needle."
+    "We help businesses",
+    "evolve.",
+    "Systems, automation, and intelligence—",
+    "designed to simplify progress."
   ];
 
   return (
@@ -94,7 +94,7 @@ const Index = () => {
             transition={{ delay: 0.4, duration: 0.5 }}
             className="mt-6 text-lg md:text-xl text-ink/70 max-w-2xl"
           >
-            We help organisations get AI-ready, upskill teams, and operationalise value—safely.
+            Aviora designs systems, automations, and intelligent tools that make change simple—enabling organizations to work smarter, faster, and more human.
           </motion.p>
 
           <motion.div
@@ -123,7 +123,7 @@ const Index = () => {
             transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="text-4xl md:text-5xl font-display text-ink text-center mb-16"
           >
-            Why Aviora?
+            How We Enable Change
           </motion.h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -163,11 +163,11 @@ const Index = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl md:text-5xl font-display text-ink mb-6">
-              Proven Results
+              Impact That Matters
             </h2>
             <p className="text-lg md:text-xl text-ink/70 mb-8">
-              Our clients achieve measurable outcomes through our practical, 
-              human-centered approach to AI enablement.
+              Our clients achieve measurable outcomes through practical, 
+              human-centered transformation—powered by intelligent systems.
             </p>
             <Button asChild className="h-12 px-7 rounded-xl bg-accent text-white hover:brightness-110">
               <Link to="/case-studies">
@@ -250,11 +250,10 @@ const Index = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-6xl font-display text-ink mb-6">
-            Ready to Begin?
+            Let's Build What's Next
           </h2>
           <p className="text-lg md:text-xl text-ink/70 mb-10 max-w-2xl mx-auto">
-            Book a free 30-minute discovery meeting. No commitment required — 
-            just an open conversation about your AI enablement journey.
+            Every great transformation starts with a conversation. Book a free discovery meeting to explore what's possible.
           </p>
           <Button asChild className="h-12 px-7 rounded-xl bg-accent text-white hover:brightness-110">
             <Link to="/contact">Book a Discovery Meeting</Link>

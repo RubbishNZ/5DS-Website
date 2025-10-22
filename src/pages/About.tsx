@@ -14,13 +14,13 @@ const values = [
   },
   {
     icon: Heart,
-    title: "Human-Centered",
-    description: "AI should empower people, not replace them. We design solutions that enhance human capabilities and create better working environments.",
+    title: "Human-Centered Innovation",
+    description: "Technology should amplify people, not replace them. We design solutions that enhance human capabilities and create better working environments.",
   },
   {
     icon: Shield,
     title: "Ethical & Transparent",
-    description: "We champion responsible AI practices. Our approach prioritizes ethics, compliance, and transparency at every stage of implementation.",
+    description: "We champion responsible implementation. Our approach prioritizes ethics, compliance, and transparency at every stage.",
   },
   {
     icon: Sparkles,
@@ -49,8 +49,7 @@ const About = () => {
             About Aviora
           </AnimatedText>
           <AnimatedText delay={0.2} className="text-xl md:text-2xl text-muted-foreground max-w-3xl">
-            We exist to help organisations navigate the AI transformation with 
-            confidence, clarity, and ethical integrity.
+            We empower organizations to adapt, innovate, and thrive through modern technology—building systems that simplify complexity and amplify human potential.
           </AnimatedText>
         </div>
       </section>
@@ -62,14 +61,12 @@ const About = () => {
             <div className="bg-card border border-border p-12 rounded-lg shadow-subtle transition-all duration-400 hover:shadow-lift hover:-translate-y-1">
               <h2 className="text-4xl font-display font-bold mb-6">Our Mission</h2>
               <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-                Most organisations know AI is important, but struggle with where to start, 
-                how to build internal capability, and how to implement responsibly. We bridge 
+                Most organizations know change is necessary, but struggle with where to start, 
+                how to modernize without disruption, and how to build lasting capability. We bridge 
                 that gap.
               </p>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Aviora provides strategic AI enablement — helping you assess readiness, train 
-                your workforce, implement practical solutions, and establish governance frameworks 
-                that ensure sustainable, ethical AI adoption.
+                Aviora combines strategy, automation, and intelligence to help you reimagine how work gets done—implementing modern solutions that evolve with your business, not against it.
               </p>
             </div>
           </AnimatedSection>
@@ -164,8 +161,8 @@ const About = () => {
               Let's Work Together
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Ready to start your AI transformation journey? Book a discovery meeting 
-              to explore how we can help.
+              Ready to evolve your business? Book a discovery meeting 
+              to explore what's possible.
             </p>
             <Button asChild variant="hero" size="lg">
               <Link to="/contact">Book a Discovery Meeting</Link>

@@ -67,7 +67,7 @@ const Contact = () => {
             Let's Talk
           </AnimatedText>
           <AnimatedText delay={0.2} className="text-xl md:text-2xl text-muted-foreground max-w-3xl">
-            Ready to transform your organisation with AI? Book a discovery meeting 
+            Every great transformation starts with a conversation. Book a discovery meeting 
             or send us a message. We'll respond within 24 hours.
           </AnimatedText>
         </div>
@@ -153,7 +153,7 @@ const Contact = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Tell us about your AI enablement needs..."
+                    placeholder="Tell us about your transformation goals..."
                     required
                     rows={6}
                     className="bg-card transition-all duration-300 focus:border-accent focus:shadow-lift"
@@ -187,9 +187,9 @@ const Contact = () => {
                 </h2>
                 <div className="bg-accent/5 border border-accent/20 p-8 rounded-lg mb-6 transition-all duration-400 hover:shadow-lift hover:-translate-y-1">
                   <p className="text-lg mb-6 text-muted-foreground">
-                    Schedule a 30-minute discovery call to discuss your AI enablement needs. 
+                    Schedule a 30-minute discovery call to discuss your transformation goals. 
                     No commitment required — just an open conversation about your challenges 
-                    and opportunities.
+                    and what's possible.
                   </p>
                   <Button asChild variant="hero" size="lg" className="w-full">
                     <a 

@@ -10,47 +10,47 @@ import CountUp from "@/components/CountUp";
 const services = [
   {
     number: 1,
-    title: "AI Readiness Assessments",
-    problem: "Most organisations don't know where to start with AI or how ready they actually are.",
-    approach: "We conduct comprehensive assessments of your current capabilities, infrastructure, data maturity, and workforce readiness.",
+    title: "Transformation Readiness",
+    problem: "Most organizations don't know where to start or how ready they are for modern systems and intelligent automation.",
+    approach: "We conduct comprehensive assessments of your current capabilities, infrastructure, data maturity, and workforce readiness—mapping a clear path forward.",
     outcomes: [
-      "Clear understanding of your AI readiness level",
-      "Prioritized roadmap for AI adoption",
-      "Identification of quick wins and long-term opportunities",
+      "Clear understanding of your modernization baseline",
+      "Prioritized roadmap for transformation",
+      "Identification of quick wins and strategic opportunities",
       "Risk assessment and mitigation strategies",
     ],
   },
   {
     number: 2,
-    title: "AI Training & Workforce Enablement",
-    problem: "Teams lack the skills and confidence to work effectively with AI tools and systems.",
-    approach: "We design and deliver tailored training programs that empower your workforce to leverage AI responsibly and effectively.",
+    title: "Workforce Enablement",
+    problem: "Teams lack the skills and confidence to work effectively with emerging tools and intelligent systems.",
+    approach: "We design and deliver tailored enablement programs that empower your workforce to leverage modern technology responsibly and effectively.",
     outcomes: [
-      "Workforce confident in using AI tools",
-      "Reduced resistance to AI adoption",
+      "Workforce confident in using next-generation tools",
+      "Reduced resistance to change",
       "Increased productivity and efficiency",
-      "Culture of continuous AI learning",
+      "Culture of continuous learning and adaptation",
     ],
   },
   {
     number: 3,
-    title: "AI Process Automation",
-    problem: "Manual processes drain resources and slow down growth, but automation feels overwhelming.",
-    approach: "We identify high-impact processes for automation and implement AI solutions that integrate seamlessly with your existing systems.",
+    title: "Intelligent Automation",
+    problem: "Manual processes drain resources and slow growth, but automation feels overwhelming or disconnected from reality.",
+    approach: "We identify high-impact processes for automation and implement intelligent solutions that integrate seamlessly with your existing systems.",
     outcomes: [
       "Significant time and cost savings",
       "Reduced human error in repetitive tasks",
-      "Freed-up resources for strategic work",
+      "Freed-up resources for strategic, creative work",
       "Scalable, maintainable automation systems",
     ],
   },
   {
     number: 4,
-    title: "AI Strategy & Advisory",
-    problem: "Without a clear AI strategy, initiatives remain fragmented and fail to deliver real value.",
-    approach: "We work with leadership to develop comprehensive AI strategies aligned with business objectives.",
+    title: "Strategic Modernization",
+    problem: "Without a clear modernization strategy, initiatives remain fragmented and fail to deliver real value.",
+    approach: "We work with leadership to develop comprehensive transformation strategies aligned with business objectives—leveraging automation, intelligence, and emerging technology as enablers.",
     outcomes: [
-      "Clear AI vision and strategic direction",
+      "Clear vision and strategic direction",
       "Aligned stakeholders and leadership buy-in",
       "Measurable KPIs and success metrics",
       "Sustainable competitive advantage",
@@ -58,14 +58,14 @@ const services = [
   },
   {
     number: 5,
-    title: "Responsible AI & Governance",
-    problem: "AI adoption without proper governance creates ethical, legal, and reputational risks.",
-    approach: "We establish frameworks for responsible AI use, including ethics guidelines, compliance protocols, and governance structures.",
+    title: "Responsible Innovation & Governance",
+    problem: "Technology adoption without proper governance creates ethical, legal, and reputational risks.",
+    approach: "We establish frameworks for responsible innovation—including ethics guidelines, compliance protocols, and governance structures that protect your people and reputation.",
     outcomes: [
-      "Robust AI governance framework",
+      "Robust governance framework",
       "Compliance with regulations and standards",
-      "Ethical AI use across the organisation",
-      "Protected brand reputation",
+      "Ethical technology use across the organization",
+      "Protected brand reputation and trust",
     ],
   },
 ];
@@ -82,8 +82,8 @@ const Services = () => {
             What We Do
           </AnimatedText>
           <AnimatedText delay={0.2} className="text-xl md:text-2xl text-muted-foreground max-w-3xl">
-            We help organisations become AI-ready through strategic enablement, 
-            comprehensive training, and responsible implementation. From assessment 
+            We help organizations modernize through strategic enablement, 
+            workforce training, and intelligent automation. From assessment 
             to execution, we're with you every step of the way.
           </AnimatedText>
         </div>
@@ -158,10 +158,10 @@ const Services = () => {
         <div className="container mx-auto max-w-4xl text-center">
           <AnimatedSection>
             <h2 className="text-4xl md:text-6xl font-display font-bold mb-6">
-              Ready to Transform Your Organisation?
+              Ready to Evolve Your Business?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Book a discovery meeting to explore how we can help you become AI-ready.
+              Book a discovery meeting to explore how we can help you modernize and thrive.
             </p>
             <Button asChild variant="hero" size="lg">
               <Link to="/contact">Book a Discovery Meeting</Link>
