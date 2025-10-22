@@ -18,12 +18,6 @@ export default {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
-        ink: '#0B1020',
-        accent: {
-          DEFAULT: '#4F6AF5',
-          muted: '#7C74F0',
-        },
-        surface: '#FAFAFA',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -82,8 +76,8 @@ export default {
         tightish: '-0.01em'
       },
       spacing: {
-        section: '9rem',
-        sectionSm: '5rem',
+        section: "12rem",
+        sectionSm: "6rem",
       },
       keyframes: {
         "accordion-down": {

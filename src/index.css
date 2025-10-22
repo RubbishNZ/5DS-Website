@@ -9,35 +9,29 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222 60% 8%;
+    --foreground: 0 0% 5%;
     --card: 0 0% 100%;
-    --card-foreground: 222 60% 8%;
+    --card-foreground: 0 0% 5%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222 60% 8%;
-    --primary: 228 87% 63%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 98%;
-    --secondary-foreground: 222 60% 8%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 222 20% 50%;
-    --accent: 228 87% 63%;
-    --accent-foreground: 0 0% 100%;
-
+    --popover-foreground: 0 0% 5%;
+    --primary: 0 0% 5%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 5%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 98%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 225 73% 57%;
-
+    --ring: 0 0% 5%;
     --radius: 0.5rem;
     
-    /* Custom design tokens */
-    --accent-purple: 250 65% 65%;
-    --shadow-subtle: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
-    --shadow-lift: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
-    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-cinematic: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --shadow-soft: 0 2px 8px rgba(0,0,0,0.04);
+    --shadow-hover: 0 4px 16px rgba(0,0,0,0.08);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -52,13 +46,27 @@ All colors MUST be HSL.
   * {
     @apply border-border;
   }
+
   body {
-    @apply bg-white text-ink;
-    font-family: 'Inter', system-ui, sans-serif;
+    @apply bg-background text-foreground;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display tracking-tightish;
+    @apply font-display;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  h1 {
+    font-size: clamp(3rem, 8vw, 8rem);
+  }
+
+  h2 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
   }
 
   html {
