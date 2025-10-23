@@ -54,15 +54,13 @@ const CaseStudies = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-32 pb-20 px-6 border-b-2 border-border">
         <div className="container mx-auto max-w-5xl">
-          <AnimatedText className="text-6xl md:text-8xl font-display font-bold mb-8">
-            Proof
+          <AnimatedText className="text-7xl md:text-9xl font-display font-black mb-12 uppercase tracking-tighter">
+            Cases
           </AnimatedText>
-          <AnimatedText delay={0.2} className="text-xl md:text-2xl text-muted-foreground max-w-3xl">
-            Real outcomes from real organisations. These anonymised case patterns 
-            demonstrate how we've helped clients transform their operations through 
-            strategic AI enablement.
+          <AnimatedText delay={0.2} className="text-xl md:text-2xl text-muted-foreground max-w-3xl font-mono uppercase tracking-wide">
+            Real projects. Real outcomes. Anonymized for client privacy.
           </AnimatedText>
         </div>
       </section>
@@ -145,18 +143,18 @@ const CaseStudies = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section-spacing px-6">
-        <div className="container mx-auto max-w-4xl text-center">
+      <section className="section-spacing px-6 bg-primary text-primary-foreground border-t-2 border-border">
+        <div className="container mx-auto max-w-6xl">
           <AnimatedSection>
-            <h2 className="text-4xl md:text-6xl font-display font-bold mb-6">
-              Your Success Story Starts Here
+            <h2 className="text-5xl md:text-7xl font-display font-black mb-12 uppercase tracking-tighter">
+              Start
             </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Let's discuss how we can help your organisation achieve similar results.
+            <p className="text-xl md:text-2xl mb-12 font-mono uppercase tracking-wide max-w-2xl">
+              Discuss your project. Get results.
             </p>
-            <Button asChild variant="hero" size="lg">
+            <Button asChild variant="hero" size="lg" className="h-16 px-12 text-lg font-mono uppercase tracking-wider border-2 border-primary-foreground bg-transparent hover:bg-primary-foreground hover:text-primary">
               <Link to="/contact">
-                Book a Discovery Meeting <ArrowRight className="ml-2" />
+                Contact <ArrowRight className="ml-3" />
               </Link>
             </Button>
           </AnimatedSection>

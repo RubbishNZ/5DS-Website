@@ -61,14 +61,13 @@ const Contact = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-32 pb-20 px-6 border-b-2 border-border">
         <div className="container mx-auto max-w-5xl">
-          <AnimatedText className="text-6xl md:text-8xl font-display font-bold mb-8">
-            Let's Talk
+          <AnimatedText className="text-7xl md:text-9xl font-display font-black mb-12 uppercase tracking-tighter">
+            Contact
           </AnimatedText>
-          <AnimatedText delay={0.2} className="text-xl md:text-2xl text-muted-foreground max-w-3xl">
-            Every great transformation starts with a conversation. Book a discovery meeting 
-            or send us a message. We'll respond within 24 hours.
+          <AnimatedText delay={0.2} className="text-xl md:text-2xl text-muted-foreground max-w-3xl font-mono uppercase tracking-wide">
+            Book a meeting. Send a message. We respond in 24 hours.
           </AnimatedText>
         </div>
       </section>
@@ -153,7 +152,7 @@ const Contact = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Tell us about your transformation goals..."
+                    placeholder="Describe your project..."
                     required
                     rows={6}
                     className="bg-card transition-all duration-300 focus:border-accent focus:shadow-lift"
@@ -187,9 +186,7 @@ const Contact = () => {
                 </h2>
                 <div className="bg-accent/5 border border-accent/20 p-8 rounded-lg mb-6 transition-all duration-400 hover:shadow-lift hover:-translate-y-1">
                   <p className="text-lg mb-6 text-muted-foreground">
-                    Schedule a 30-minute discovery call to discuss your transformation goals. 
-                    No commitment required — just an open conversation about your challenges 
-                    and what's possible.
+                    Book a 30-minute call. Discuss your needs. No obligation.
                   </p>
                   <Button asChild variant="hero" size="lg" className="w-full">
                     <a 

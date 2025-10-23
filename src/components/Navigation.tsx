@@ -18,33 +18,33 @@ const Navigation = () => {
 
   const navLinks = [
     { path: "/", label: "Home" },
-    { path: "/services", label: "What We Do" },
-    { path: "/case-studies", label: "Proof" },
+    { path: "/services", label: "Services" },
+    { path: "/case-studies", label: "Cases" },
     { path: "/about", label: "About" },
     { path: "/contact", label: "Contact" },
   ];
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
+      className={`sticky top-0 z-50 transition-all duration-200 border-b-2 border-border ${
         isScrolled 
-          ? "bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 shadow-soft" 
-          : "bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60"
+          ? "bg-background shadow-lg" 
+          : "bg-background"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 md:px-8 h-16 flex items-center justify-between">
-        <Link to="/" className="font-display text-xl text-ink hover:text-accent transition-colors">
-          Aviora
+      <div className="max-w-7xl mx-auto px-6 md:px-8 h-20 flex items-center justify-between">
+        <Link to="/" className="font-display text-2xl font-black text-foreground hover:text-accent transition-colors uppercase tracking-tighter">
+          AVIORA
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-8 text-ink/70">
+        <nav className="hidden md:flex gap-10 text-foreground font-mono uppercase tracking-wider text-sm font-bold">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
-              className={`hover:text-ink transition-colors ${
-                location.pathname === link.path ? "text-ink font-medium" : ""
+              className={`hover:text-accent transition-colors ${
+                location.pathname === link.path ? "text-accent underline underline-offset-4 decoration-2" : ""
               }`}
             >
               {link.label}
@@ -52,32 +52,32 @@ const Navigation = () => {
           ))}
         </nav>
 
-        <Button asChild className="hidden md:inline-flex bg-accent text-white hover:brightness-110">
-          <Link to="/contact">Book a Discovery</Link>
+        <Button asChild className="hidden md:inline-flex h-12 px-8 font-mono uppercase tracking-wider text-sm border-2 border-foreground bg-foreground text-background hover:bg-background hover:text-foreground">
+          <Link to="/contact">Start</Link>
         </Button>
 
         {/* Mobile Navigation */}
         <Sheet>
           <SheetTrigger asChild className="md:hidden">
-            <button className="p-2" aria-label="Toggle menu">
-              <Menu size={24} className="text-ink" />
+            <button className="p-2 border-2 border-foreground hover:bg-foreground hover:text-background transition-colors" aria-label="Toggle menu">
+              <Menu size={24} />
             </button>
           </SheetTrigger>
-          <SheetContent>
+          <SheetContent className="border-l-2 border-border">
             <nav className="flex flex-col gap-6 mt-8">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`text-lg hover:text-accent transition-colors ${
-                    location.pathname === link.path ? "text-accent font-medium" : "text-ink/70"
+                  className={`text-lg font-mono uppercase tracking-wider hover:text-accent transition-colors ${
+                    location.pathname === link.path ? "text-accent font-bold" : "text-foreground"
                   }`}
                 >
                   {link.label}
                 </Link>
               ))}
-              <Button asChild className="mt-4 bg-accent text-white">
-                <Link to="/contact">Book a Discovery</Link>
+              <Button asChild className="mt-4 h-12 px-8 font-mono uppercase tracking-wider border-2 border-foreground bg-foreground text-background hover:bg-background hover:text-foreground">
+                <Link to="/contact">Start</Link>
               </Button>
             </nav>
           </SheetContent>

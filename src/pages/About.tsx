@@ -7,15 +7,15 @@ import AnimatedSection from "@/components/AnimatedSection";
 const values = [
   {
     title: "Lean & Pragmatic",
-    description: "We believe in practical solutions over theoretical frameworks. Every recommendation is grounded in real-world applicability and measurable outcomes.",
+    description: "Practical solutions. Real-world applicability. Measurable outcomes.",
   },
   {
     title: "Human-Centered Innovation",
-    description: "Technology should amplify people, not replace them. We design solutions that enhance human capabilities and create better working environments.",
+    description: "Technology amplifies people. Better work environments.",
   },
   {
     title: "Ethical & Transparent",
-    description: "We champion responsible implementation. Our approach prioritizes ethics, compliance, and transparency at every stage.",
+    description: "Responsible implementation. Ethics and compliance first.",
   },
 ];
 
@@ -26,81 +26,100 @@ const About = () => {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <AnimatedSection className="px-6 md:px-12 pt-40 pb-24 md:pb-32">
-          <div className="max-w-7xl mx-auto text-center">
-            <h1 className="font-display text-6xl md:text-8xl lg:text-9xl leading-none text-foreground mb-12">
+        <AnimatedSection className="px-6 md:px-12 pt-40 pb-24 md:pb-32 border-b-2 border-border">
+          <div className="max-w-7xl mx-auto">
+            <h1 className="font-display text-8xl md:text-[12rem] font-black mb-16 tracking-tighter uppercase">
               ABOUT
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              In this space you will find who we are
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl leading-relaxed font-mono uppercase tracking-wide">
+              We build systems that work. Strategy, automation, intelligence.
             </p>
           </div>
         </AnimatedSection>
 
         {/* Info Table Section */}
-        <AnimatedSection className="px-6 md:px-12 py-16 md:py-24 border-t border-border" delay={0.2}>
-          <div className="max-w-5xl mx-auto">
-            <div className="border border-border">
-              <div className="grid grid-cols-1 md:grid-cols-4 border-b border-border">
-                <div className="p-6 border-r border-border bg-muted/30">
-                  <div className="text-sm uppercase tracking-wider text-muted-foreground">Founded</div>
-                </div>
-                <div className="p-6 border-r border-border bg-muted/30">
-                  <div className="text-sm uppercase tracking-wider text-muted-foreground">Expertise</div>
-                </div>
-                <div className="p-6 border-r border-border bg-muted/30">
-                  <div className="text-sm uppercase tracking-wider text-muted-foreground">Approach</div>
-                </div>
-                <div className="p-6 bg-muted/30">
-                  <div className="text-sm uppercase tracking-wider text-muted-foreground">Remote</div>
-                </div>
+        <AnimatedSection className="px-6 md:px-12 py-16 md:py-24 border-b-2 border-border" delay={0.2}>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-0 border-2 border-border">
+              <div className="bg-background p-10 border-r-2 border-b-2 border-border md:border-b-0">
+                <div className="text-xs text-muted-foreground font-mono mb-6 uppercase tracking-widest">[01] Founded</div>
+                <div className="text-4xl font-display font-black uppercase">2024</div>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-4">
-                <div className="p-6 border-r border-border">
-                  <div className="text-base md:text-lg text-foreground">2024</div>
-                </div>
-                <div className="p-6 border-r border-border">
-                  <div className="text-base md:text-lg text-foreground">Transformation</div>
-                </div>
-                <div className="p-6 border-r border-border">
-                  <div className="text-base md:text-lg text-foreground">Human-Centered</div>
-                </div>
-                <div className="p-6">
-                  <div className="text-base md:text-lg text-foreground">Global</div>
-                </div>
+              <div className="bg-background p-10 border-r-2 border-b-2 border-border md:border-b-0">
+                <div className="text-xs text-muted-foreground font-mono mb-6 uppercase tracking-widest">[02] Location</div>
+                <div className="text-4xl font-display font-black uppercase">Global</div>
+              </div>
+              <div className="bg-background p-10 border-r-2 border-b-2 border-border md:border-b-0">
+                <div className="text-xs text-muted-foreground font-mono mb-6 uppercase tracking-widest">[03] Focus</div>
+                <div className="text-4xl font-display font-black uppercase">Systems</div>
+              </div>
+              <div className="bg-background p-10 border-b-2 border-border md:border-b-0 md:border-r-0">
+                <div className="text-xs text-muted-foreground font-mono mb-6 uppercase tracking-widest">[04] Method</div>
+                <div className="text-4xl font-display font-black uppercase">Direct</div>
               </div>
             </div>
           </div>
         </AnimatedSection>
 
         {/* Story Section */}
-        <AnimatedSection className="px-6 md:px-12 py-24 md:py-32 border-t border-border" delay={0.3}>
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-8 text-2xl md:text-3xl text-foreground leading-relaxed font-light">
+        <AnimatedSection className="px-6 md:px-12 py-24 md:py-32 border-b-2 border-border" delay={0.3}>
+          <div className="max-w-5xl mx-auto space-y-16">
+            <div>
+              <h2 className="text-5xl md:text-6xl font-display font-black mb-12 uppercase tracking-tighter">
+                Mission
+              </h2>
+              <p className="text-2xl md:text-3xl text-foreground leading-tight font-light">
+                Build systems that enable organizations to work better. No complexity. No waste.
+              </p>
+            </div>
+            
+            <div className="space-y-8 text-lg text-muted-foreground leading-relaxed font-mono border-l-4 border-border pl-8">
               <p>
-                Business enablement and transformation partner leveraging intelligent systems, automation, 
-                and emerging technology to amplify human potential.
+                Most organizations are stuck. Outdated processes. Manual workflows. No clear path forward.
+              </p>
+              <p>
+                We design automation and intelligence infrastructure. We train teams. We execute projects that deliver measurable outcomes.
+              </p>
+              <p>
+                No jargon. No fluff. Real work that moves the business forward.
               </p>
             </div>
           </div>
         </AnimatedSection>
 
         {/* Values Section */}
-        <AnimatedSection className="px-6 md:px-12 py-24 md:py-32 border-t border-border" delay={0.4}>
+        <AnimatedSection className="px-6 md:px-12 py-24 md:py-32 border-b-2 border-border" delay={0.4}>
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl md:text-6xl font-display text-foreground mb-20">
+            <h2 className="text-5xl md:text-6xl font-display font-black mb-20 uppercase tracking-tighter">
               Principles
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border">
-              {values.map((value, index) => (
-                <div key={index} className="bg-background p-8 md:p-10 hover:bg-muted/30 transition-colors duration-300">
-                  <div className="text-sm text-muted-foreground font-mono mb-6">
-                    {String(index + 1).padStart(2, '0')}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border-2 border-border">
+              {[
+                {
+                  title: "Outcomes First",
+                  description: "Measure success by results. Not effort."
+                },
+                {
+                  title: "Direct Communication",
+                  description: "Clear language. No corporate speak."
+                },
+                {
+                  title: "Human Systems",
+                  description: "Technology serves people. Not the reverse."
+                },
+                {
+                  title: "Real Partnership",
+                  description: "We work with you. Not for you."
+                }
+              ].map((value, index) => (
+                <div key={index} className="bg-background p-12 border-r-2 border-b-2 border-border last:border-r-0 md:nth-child-even:border-r-0 hover:bg-foreground hover:text-background transition-all duration-200 group">
+                  <div className="text-xs text-muted-foreground font-mono mb-8 uppercase tracking-widest group-hover:text-background">
+                    [{String(index + 1).padStart(2, '0')}]
                   </div>
-                  <h3 className="text-xl md:text-2xl font-display text-foreground mb-4">
+                  <h3 className="text-3xl md:text-4xl font-display font-black mb-6 uppercase tracking-tight group-hover:text-background">
                     {value.title}
                   </h3>
-                  <p className="text-base text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed font-mono group-hover:text-background/80">
                     {value.description}
                   </p>
                 </div>
@@ -110,17 +129,17 @@ const About = () => {
         </AnimatedSection>
 
         {/* CTA Section */}
-        <AnimatedSection className="px-6 md:px-12 py-32 md:py-48 border-t border-border bg-primary text-primary-foreground" delay={0.5}>
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-5xl md:text-7xl font-display mb-8 leading-none">
-              Let's Build Together
+        <AnimatedSection className="px-6 md:px-12 py-32 md:py-48 bg-primary text-primary-foreground" delay={0.5}>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-6xl md:text-8xl font-display font-black mb-12 uppercase tracking-tighter">
+              Start Here
             </h2>
-            <p className="text-lg md:text-xl mb-12 max-w-2xl opacity-80">
-              Interested in partnering with us? We'd love to hear about your challenges and explore how we can help.
+            <p className="text-xl md:text-2xl mb-12 font-mono uppercase tracking-wide max-w-2xl">
+              Book a meeting. Discuss your needs. Get a plan.
             </p>
             <Link to="/contact">
-              <Button size="lg" variant="outline" className="h-14 px-10 text-base bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                Get in Touch
+              <Button size="lg" className="h-16 px-12 text-lg font-mono uppercase tracking-wider border-2 border-primary-foreground bg-transparent hover:bg-primary-foreground hover:text-primary">
+                Contact
               </Button>
             </Link>
           </div>

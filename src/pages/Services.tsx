@@ -76,15 +76,13 @@ const Services = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-32 pb-20 px-6 border-b-2 border-border">
         <div className="container mx-auto max-w-5xl">
-          <AnimatedText className="text-6xl md:text-8xl font-display font-bold mb-8">
-            What We Do
+          <AnimatedText className="text-7xl md:text-9xl font-display font-black mb-12 uppercase tracking-tighter">
+            Services
           </AnimatedText>
-          <AnimatedText delay={0.2} className="text-xl md:text-2xl text-muted-foreground max-w-3xl">
-            We help organizations modernize through strategic enablement, 
-            workforce training, and intelligent automation. From assessment 
-            to execution, we're with you every step of the way.
+          <AnimatedText delay={0.2} className="text-xl md:text-2xl text-muted-foreground max-w-3xl font-mono uppercase tracking-wide">
+            Strategy. Automation. Training. Execution.
           </AnimatedText>
         </div>
       </section>
@@ -154,17 +152,17 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section-spacing px-6">
-        <div className="container mx-auto max-w-4xl text-center">
+      <section className="section-spacing px-6 bg-primary text-primary-foreground border-t-2 border-border">
+        <div className="container mx-auto max-w-6xl">
           <AnimatedSection>
-            <h2 className="text-4xl md:text-6xl font-display font-bold mb-6">
-              Ready to Evolve Your Business?
+            <h2 className="text-5xl md:text-7xl font-display font-black mb-12 uppercase tracking-tighter">
+              Get Started
             </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Book a discovery meeting to explore how we can help you modernize and thrive.
+            <p className="text-xl md:text-2xl mb-12 font-mono uppercase tracking-wide max-w-2xl">
+              Schedule a call. Discuss your project.
             </p>
-            <Button asChild variant="hero" size="lg">
-              <Link to="/contact">Book a Discovery Meeting</Link>
+            <Button asChild variant="hero" size="lg" className="h-16 px-12 text-lg font-mono uppercase tracking-wider border-2 border-primary-foreground bg-transparent hover:bg-primary-foreground hover:text-primary">
+              <Link to="/contact">Contact</Link>
             </Button>
           </AnimatedSection>
         </div>
