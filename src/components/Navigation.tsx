@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Navigation = () => {
   const location = useLocation();
@@ -52,36 +53,42 @@ const Navigation = () => {
           ))}
         </nav>
 
-        <Button asChild className="hidden md:inline-flex h-12 px-8 font-mono uppercase tracking-wider text-sm border-2 border-foreground bg-foreground text-background hover:bg-background hover:text-foreground">
-          <Link to="/contact">Start</Link>
-        </Button>
+        <div className="hidden md:flex items-center gap-4">
+          <ThemeToggle />
+          <Button asChild className="h-12 px-8 font-mono uppercase tracking-wider text-sm border-2 border-foreground bg-foreground text-background hover:bg-background hover:text-foreground">
+            <Link to="/contact">Start</Link>
+          </Button>
+        </div>
 
         {/* Mobile Navigation */}
-        <Sheet>
-          <SheetTrigger asChild className="md:hidden">
-            <button className="p-2 border-2 border-foreground hover:bg-foreground hover:text-background transition-colors" aria-label="Toggle menu">
-              <Menu size={24} />
-            </button>
-          </SheetTrigger>
-          <SheetContent className="border-l-2 border-border">
-            <nav className="flex flex-col gap-6 mt-8">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  className={`text-lg font-mono uppercase tracking-wider hover:text-accent transition-colors ${
-                    location.pathname === link.path ? "text-accent font-bold" : "text-foreground"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
-              <Button asChild className="mt-4 h-12 px-8 font-mono uppercase tracking-wider border-2 border-foreground bg-foreground text-background hover:bg-background hover:text-foreground">
-                <Link to="/contact">Start</Link>
-              </Button>
-            </nav>
-          </SheetContent>
-        </Sheet>
+        <div className="md:hidden flex items-center gap-3">
+          <ThemeToggle />
+          <Sheet>
+            <SheetTrigger asChild>
+              <button className="p-2 border-2 border-foreground hover:bg-foreground hover:text-background transition-colors" aria-label="Toggle menu">
+                <Menu size={24} />
+              </button>
+            </SheetTrigger>
+            <SheetContent className="border-l-2 border-border">
+              <nav className="flex flex-col gap-6 mt-8">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    className={`text-lg font-mono uppercase tracking-wider hover:text-accent transition-colors ${
+                      location.pathname === link.path ? "text-accent font-bold" : "text-foreground"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+                <Button asChild className="mt-4 h-12 px-8 font-mono uppercase tracking-wider border-2 border-foreground bg-foreground text-background hover:bg-background hover:text-foreground">
+                  <Link to="/contact">Start</Link>
+                </Button>
+              </nav>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </header>
   );
