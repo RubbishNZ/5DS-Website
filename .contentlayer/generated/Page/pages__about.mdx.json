@@ -1,0 +1,97 @@
+{
+  "title": "About",
+  "description": "Build systems that let teams operate with clarity, speed, and accountability.",
+  "hero": {
+    "lines": [
+      "About",
+      "Aviora"
+    ],
+    "body": "We are operators, engineers, and designers of AI-first organisations. Practical, direct, outcomes-led.",
+    "type": "Hero",
+    "_raw": {}
+  },
+  "ctaSection": {
+    "title": "Let’s Build the System Your Strategy Deserves",
+    "body": "Book a discovery call to audit your current operating model and identify the highest-leverage automation plays.",
+    "cta": {
+      "label": "Book Discovery",
+      "href": "/contact",
+      "type": "Cta",
+      "_raw": {}
+    },
+    "type": "CtaSection",
+    "_raw": {}
+  },
+  "infoCards": [
+    {
+      "label": "Founded",
+      "value": "2024",
+      "type": "InfoCard",
+      "_raw": {}
+    },
+    {
+      "label": "HQ",
+      "value": "Remote-First",
+      "type": "InfoCard",
+      "_raw": {}
+    },
+    {
+      "label": "Focus",
+      "value": "AI Systems",
+      "type": "InfoCard",
+      "_raw": {}
+    },
+    {
+      "label": "Engagements",
+      "value": "Sprint to Scale",
+      "type": "InfoCard",
+      "_raw": {}
+    }
+  ],
+  "story": [
+    "Organisations hit a ceiling when their operations can't keep pace with their ambition. Tools multiply, teams adapt workflows manually, and critical knowledge lives in silos.",
+    "Aviora exists to remove that drag. We build operating systems that align people, data, and automation so the business moves in sync.",
+    "No jargon. No bloated programmes. Just clear strategy, decisive execution, and measurable outcomes."
+  ],
+  "principles": [
+    {
+      "title": "Outcomes First",
+      "description": "Every project begins with the metric that matters. We design systems to move it visibly and repeatedly.",
+      "type": "Principle",
+      "_raw": {}
+    },
+    {
+      "title": "Direct Communication",
+      "description": "We cut through noise with transparent reporting, tight feedback loops, and clear ownership.",
+      "type": "Principle",
+      "_raw": {}
+    },
+    {
+      "title": "Human Systems",
+      "description": "Technology should create leverage for teams. We automate the boring work so people can design, decide, and lead.",
+      "type": "Principle",
+      "_raw": {}
+    },
+    {
+      "title": "Real Partnership",
+      "description": "We build alongside your team, transfer capability, and leave behind assets you control.",
+      "type": "Principle",
+      "_raw": {}
+    }
+  ],
+  "body": {
+    "raw": "",
+    "code": "var Component=(()=>{var u=Object.create;var s=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,h=Object.prototype.hasOwnProperty;var y=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),b=(e,t)=>{for(var a in t)s(e,a,{get:t[a],enumerable:!0})},r=(e,t,a,n)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let i of p(t))!h.call(e,i)&&i!==a&&s(e,i,{get:()=>t[i],enumerable:!(n=m(t,i))||n.enumerable});return e};var v=(e,t,a)=>(a=e!=null?u(g(e)):{},r(t||!e||!e.__esModule?s(a,\"default\",{value:e,enumerable:!0}):a,e)),f=e=>r(s({},\"__esModule\",{value:!0}),e);var c=y((A,l)=>{l.exports=_jsx_runtime});var S={};b(S,{default:()=>k,frontmatter:()=>w});var o=v(c()),w={title:\"About\",description:\"Build systems that let teams operate with clarity, speed, and accountability.\",hero:{lines:[\"About\",\"Aviora\"],body:\"We are operators, engineers, and designers of AI-first organisations. Practical, direct, outcomes-led.\"},infoCards:[{label:\"Founded\",value:\"2024\"},{label:\"HQ\",value:\"Remote-First\"},{label:\"Focus\",value:\"AI Systems\"},{label:\"Engagements\",value:\"Sprint to Scale\"}],story:[\"Organisations hit a ceiling when their operations can't keep pace with their ambition. Tools multiply, teams adapt workflows manually, and critical knowledge lives in silos.\",\"Aviora exists to remove that drag. We build operating systems that align people, data, and automation so the business moves in sync.\",\"No jargon. No bloated programmes. Just clear strategy, decisive execution, and measurable outcomes.\"],principles:[{title:\"Outcomes First\",description:\"Every project begins with the metric that matters. We design systems to move it visibly and repeatedly.\"},{title:\"Direct Communication\",description:\"We cut through noise with transparent reporting, tight feedback loops, and clear ownership.\"},{title:\"Human Systems\",description:\"Technology should create leverage for teams. We automate the boring work so people can design, decide, and lead.\"},{title:\"Real Partnership\",description:\"We build alongside your team, transfer capability, and leave behind assets you control.\"}],ctaSection:{title:\"Let\\u2019s Build the System Your Strategy Deserves\",body:\"Book a discovery call to audit your current operating model and identify the highest-leverage automation plays.\",cta:{label:\"Book Discovery\",href:\"/contact\"}}};function d(e){return(0,o.jsx)(o.Fragment,{})}function x(e={}){let{wrapper:t}=e.components||{};return t?(0,o.jsx)(t,Object.assign({},e,{children:(0,o.jsx)(d,e)})):d(e)}var k=x;return f(S);})();\n;return Component;"
+  },
+  "_id": "pages/about.mdx",
+  "_raw": {
+    "sourceFilePath": "pages/about.mdx",
+    "sourceFileName": "about.mdx",
+    "sourceFileDir": "pages",
+    "contentType": "mdx",
+    "flattenedPath": "pages/about"
+  },
+  "type": "Page",
+  "slug": "about",
+  "url": "/about"
+}

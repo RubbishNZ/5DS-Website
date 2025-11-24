@@ -1,0 +1,87 @@
+{
+  "title": "Services",
+  "description": "AI-native operating systems that remove friction, accelerate execution, and create measurable impact.",
+  "hero": {
+    "lines": [
+      "Systems",
+      "That Ship"
+    ],
+    "body": "We architect automation, intelligence, and enablement infrastructure so your teams can deliver faster with less waste.",
+    "cta": {
+      "label": "Plan Your Build",
+      "href": "/contact",
+      "type": "Cta",
+      "_raw": {}
+    },
+    "type": "Hero",
+    "_raw": {}
+  },
+  "ctaSection": {
+    "title": "Ship Your Next System in 30 Days",
+    "body": "Book a discovery call. We will audit your current stack, design the operating model, and give you a clear execution roadmap.",
+    "cta": {
+      "label": "Schedule Discovery",
+      "href": "/contact",
+      "type": "Cta",
+      "_raw": {}
+    },
+    "type": "CtaSection",
+    "_raw": {}
+  },
+  "services": [
+    {
+      "order": 1,
+      "title": "AI Operating System",
+      "problem": "Fragmented processes, scattered data, and manual decision points slow teams down and hide the real bottlenecks.",
+      "approach": "Map your workflows, design the canonical data model, and deploy orchestrated automations that connect product, sales, marketing, and operations.",
+      "outcomes": [
+        "Single source of truth for signals, decisions, and accountability.",
+        "Automated task routing, approvals, and reporting across teams.",
+        "Predictable execution cadence with real-time visibility for leadership."
+      ],
+      "type": "Service",
+      "_raw": {}
+    },
+    {
+      "order": 2,
+      "title": "Intelligent Delivery Pods",
+      "problem": "Critical initiatives stall because teams lack focused capacity and the right leverage from AI copilots.",
+      "approach": "Embed cross-functional pods, build bespoke copilots, and codify operating rhythms that keep outcomes on track.",
+      "outcomes": [
+        "Rapid validation cycles with measurable KPI movement every sprint.",
+        "Purpose-built copilots that surface insight and automate repetitive effort.",
+        "Operational playbooks that scale without adding headcount."
+      ],
+      "type": "Service",
+      "_raw": {}
+    },
+    {
+      "order": 3,
+      "title": "Automation Control Tower",
+      "problem": "Ad-hoc scripts and point solutions introduce risk, break silently, and erode trust across the organisation.",
+      "approach": "Centralise automation management, implement observability, and layer governance so the business can scale with confidence.",
+      "outcomes": [
+        "Monitored automations with alerting, runbooks, and ownership.",
+        "Guardrails for compliance, privacy, and ethical AI usage.",
+        "Continuous improvement pipeline driven by data, not guesswork."
+      ],
+      "type": "Service",
+      "_raw": {}
+    }
+  ],
+  "body": {
+    "raw": "",
+    "code": "var Component=(()=>{var u=Object.create;var n=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var h=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var g=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),b=(e,t)=>{for(var a in t)n(e,a,{get:t[a],enumerable:!0})},s=(e,t,a,r)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let i of p(t))!y.call(e,i)&&i!==a&&n(e,i,{get:()=>t[i],enumerable:!(r=m(t,i))||r.enumerable});return e};var f=(e,t,a)=>(a=e!=null?u(h(e)):{},s(t||!e||!e.__esModule?n(a,\"default\",{value:e,enumerable:!0}):a,e)),v=e=>s(n({},\"__esModule\",{value:!0}),e);var l=g((C,c)=>{c.exports=_jsx_runtime});var S={};b(S,{default:()=>x,frontmatter:()=>w});var o=f(l()),w={title:\"Services\",description:\"AI-native operating systems that remove friction, accelerate execution, and create measurable impact.\",hero:{lines:[\"Systems\",\"That Ship\"],body:\"We architect automation, intelligence, and enablement infrastructure so your teams can deliver faster with less waste.\",cta:{label:\"Plan Your Build\",href:\"/contact\"}},services:[{order:1,title:\"AI Operating System\",problem:\"Fragmented processes, scattered data, and manual decision points slow teams down and hide the real bottlenecks.\",approach:\"Map your workflows, design the canonical data model, and deploy orchestrated automations that connect product, sales, marketing, and operations.\",outcomes:[\"Single source of truth for signals, decisions, and accountability.\",\"Automated task routing, approvals, and reporting across teams.\",\"Predictable execution cadence with real-time visibility for leadership.\"]},{order:2,title:\"Intelligent Delivery Pods\",problem:\"Critical initiatives stall because teams lack focused capacity and the right leverage from AI copilots.\",approach:\"Embed cross-functional pods, build bespoke copilots, and codify operating rhythms that keep outcomes on track.\",outcomes:[\"Rapid validation cycles with measurable KPI movement every sprint.\",\"Purpose-built copilots that surface insight and automate repetitive effort.\",\"Operational playbooks that scale without adding headcount.\"]},{order:3,title:\"Automation Control Tower\",problem:\"Ad-hoc scripts and point solutions introduce risk, break silently, and erode trust across the organisation.\",approach:\"Centralise automation management, implement observability, and layer governance so the business can scale with confidence.\",outcomes:[\"Monitored automations with alerting, runbooks, and ownership.\",\"Guardrails for compliance, privacy, and ethical AI usage.\",\"Continuous improvement pipeline driven by data, not guesswork.\"]}],ctaSection:{title:\"Ship Your Next System in 30 Days\",body:\"Book a discovery call. We will audit your current stack, design the operating model, and give you a clear execution roadmap.\",cta:{label:\"Schedule Discovery\",href:\"/contact\"}}};function d(e){return(0,o.jsx)(o.Fragment,{})}function k(e={}){let{wrapper:t}=e.components||{};return t?(0,o.jsx)(t,Object.assign({},e,{children:(0,o.jsx)(d,e)})):d(e)}var x=k;return v(S);})();\n;return Component;"
+  },
+  "_id": "pages/services.mdx",
+  "_raw": {
+    "sourceFilePath": "pages/services.mdx",
+    "sourceFileName": "services.mdx",
+    "sourceFileDir": "pages",
+    "contentType": "mdx",
+    "flattenedPath": "pages/services"
+  },
+  "type": "Page",
+  "slug": "services",
+  "url": "/services"
+}

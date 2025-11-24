@@ -1,0 +1,94 @@
+{
+  "title": "Build systems. Make progress.",
+  "description": "AI readiness consulting, automation, and enablement for teams who want results—not fluff.",
+  "hero": {
+    "lines": [
+      "Build",
+      "systems.",
+      "Make",
+      "progress."
+    ],
+    "body": "We design automations and intelligent systems. No fluff. Real work.",
+    "cta": {
+      "label": "Start",
+      "href": "/contact",
+      "type": "Cta",
+      "_raw": {}
+    },
+    "type": "Hero",
+    "_raw": {}
+  },
+  "pillars": [
+    {
+      "title": "Strategic Modernization",
+      "description": "We assess your systems, processes, and readiness—then design a pragmatic roadmap for evolution.",
+      "type": "Pillar",
+      "_raw": {}
+    },
+    {
+      "title": "Human-Centered Enablement",
+      "description": "Training and tools that amplify your team's potential, not replace it.",
+      "type": "Pillar",
+      "_raw": {}
+    },
+    {
+      "title": "Responsible Innovation",
+      "description": "Ethical frameworks and governance that protect your people, data, and reputation.",
+      "type": "Pillar",
+      "_raw": {}
+    },
+    {
+      "title": "Tangible Progress",
+      "description": "Intelligent solutions that deliver measurable value and competitive advantage.",
+      "type": "Pillar",
+      "_raw": {}
+    }
+  ],
+  "proofPoints": [
+    {
+      "title": "40% Faster Time-to-Value",
+      "description": "Organizations accelerate through our readiness programs",
+      "type": "ProofPoint",
+      "_raw": {}
+    },
+    {
+      "title": "90%+ Confidence",
+      "description": "Teams report after completing our enablement training",
+      "type": "ProofPoint",
+      "_raw": {}
+    },
+    {
+      "title": "6-12 Month ROI",
+      "description": "Automation projects consistently deliver within first year",
+      "type": "ProofPoint",
+      "_raw": {}
+    }
+  ],
+  "ctaSection": {
+    "title": "Talk.",
+    "body": "Book a meeting. Discuss your project. Get started.",
+    "cta": {
+      "label": "Contact",
+      "href": "/contact",
+      "type": "Cta",
+      "_raw": {}
+    },
+    "type": "CtaSection",
+    "_raw": {}
+  },
+  "body": {
+    "raw": "\nWelcome to Aviora. We help teams adopt intelligent systems with clarity, momentum, and measurable outcomes.",
+    "code": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var h=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),y=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},r=(t,e,n,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of u(e))!f.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(s=p(e,o))||s.enumerable});return t};var b=(t,e,n)=>(n=t!=null?m(g(t)):{},r(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),v=t=>r(a({},\"__esModule\",{value:!0}),t);var c=h((C,l)=>{l.exports=_jsx_runtime});var M={};y(M,{default:()=>x,frontmatter:()=>j});var i=b(c()),j={title:\"Build systems. Make progress.\",description:\"AI readiness consulting, automation, and enablement for teams who want results\\u2014not fluff.\",hero:{lines:[\"Build\",\"systems.\",\"Make\",\"progress.\"],body:\"We design automations and intelligent systems. No fluff. Real work.\",cta:{label:\"Start\",href:\"/contact\"}},pillars:[{title:\"Strategic Modernization\",description:\"We assess your systems, processes, and readiness\\u2014then design a pragmatic roadmap for evolution.\"},{title:\"Human-Centered Enablement\",description:\"Training and tools that amplify your team's potential, not replace it.\"},{title:\"Responsible Innovation\",description:\"Ethical frameworks and governance that protect your people, data, and reputation.\"},{title:\"Tangible Progress\",description:\"Intelligent solutions that deliver measurable value and competitive advantage.\"}],proofPoints:[{title:\"40% Faster Time-to-Value\",description:\"Organizations accelerate through our readiness programs\"},{title:\"90%+ Confidence\",description:\"Teams report after completing our enablement training\"},{title:\"6-12 Month ROI\",description:\"Automation projects consistently deliver within first year\"}],ctaSection:{title:\"Talk.\",body:\"Book a meeting. Discuss your project. Get started.\",cta:{label:\"Contact\",href:\"/contact\"}}};function d(t){let e=Object.assign({p:\"p\"},t.components);return(0,i.jsx)(e.p,{children:\"Welcome to Aviora. We help teams adopt intelligent systems with clarity, momentum, and measurable outcomes.\"})}function w(t={}){let{wrapper:e}=t.components||{};return e?(0,i.jsx)(e,Object.assign({},t,{children:(0,i.jsx)(d,t)})):d(t)}var x=w;return v(M);})();\n;return Component;"
+  },
+  "_id": "pages/home.mdx",
+  "_raw": {
+    "sourceFilePath": "pages/home.mdx",
+    "sourceFileName": "home.mdx",
+    "sourceFileDir": "pages",
+    "contentType": "mdx",
+    "flattenedPath": "pages/home"
+  },
+  "type": "Page",
+  "slug": "home",
+  "url": "/"
+}

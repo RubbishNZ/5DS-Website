@@ -1,6 +1,6 @@
-# Aviora — Systems, Automation, Training
+# 5DS Website
 
-Marketing site and lightweight CMS for Aviora, a consultancy focused on strategic modernization, intelligent automation, and workforce enablement.
+Marketing site and lightweight CMS for 5DS.
 
 Live sections include Home, Services, Case Studies, About, and Contact. A protected CMS page allows authenticated admins to edit case studies stored in Supabase.
 
@@ -71,7 +71,7 @@ Basic steps:
 
 ## Branding
 
-Project copy and UI are branded as “Aviora”. Update content in `src/pages` as needed.
+Project copy and UI should reflect the 5DS brand. Update content as needed.
 
 ## License
 

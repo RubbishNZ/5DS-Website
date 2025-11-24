@@ -1,0 +1,92 @@
+{
+  "title": "Contact",
+  "description": "Book a discovery call, scope your project, and get a clear action plan within 24 hours.",
+  "hero": {
+    "lines": [
+      "Contact"
+    ],
+    "body": "Tell us where you are stuck. We’ll respond personally with next steps and the fastest path to value.",
+    "type": "Hero",
+    "_raw": {}
+  },
+  "ctaSection": {
+    "title": "Ready When You Are",
+    "body": "Share a brief, attach context, or send a loom. We’ll review, come prepared, and help you build momentum immediately.",
+    "cta": {
+      "label": "Start the Conversation",
+      "href": "/contact",
+      "type": "Cta",
+      "_raw": {}
+    },
+    "type": "CtaSection",
+    "_raw": {}
+  },
+  "contactMethods": [
+    {
+      "icon": "Clock",
+      "title": "Response Time",
+      "value": "Within 24 hours",
+      "type": "ContactMethod",
+      "_raw": {}
+    },
+    {
+      "icon": "Mail",
+      "title": "Email",
+      "value": "hello@aviora.ai",
+      "href": "mailto:hello@aviora.ai",
+      "type": "ContactMethod",
+      "_raw": {}
+    },
+    {
+      "icon": "MapPin",
+      "title": "Locations",
+      "value": "Serving teams worldwide",
+      "type": "ContactMethod",
+      "_raw": {}
+    },
+    {
+      "icon": "PhoneCall",
+      "title": "Direct Line",
+      "value": "+44 20 4524 7206",
+      "href": "tel:+442045247206",
+      "type": "ContactMethod",
+      "_raw": {}
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How quickly can we start?",
+      "answer": "Discovery typically takes one week. Implementation begins immediately after alignment on scope and success metrics.",
+      "type": "Faq",
+      "_raw": {}
+    },
+    {
+      "question": "Do you work with in-house teams?",
+      "answer": "Yes. We embed alongside your operators, engineers, and product leads to transfer capability as we execute.",
+      "type": "Faq",
+      "_raw": {}
+    },
+    {
+      "question": "What do engagements cost?",
+      "answer": "Most programmes range between £12k-£40k per month depending on scope, velocity, and governance requirements.",
+      "type": "Faq",
+      "_raw": {}
+    }
+  ],
+  "calendlyUrl": "https://calendly.com/aviora-ai/discovery",
+  "body": {
+    "raw": "",
+    "code": "var Component=(()=>{var u=Object.create;var i=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var w=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),v=(e,t)=>{for(var o in t)i(e,o,{get:t[o],enumerable:!0})},s=(e,t,o,r)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let n of h(t))!y.call(e,n)&&n!==o&&i(e,n,{get:()=>t[n],enumerable:!(r=m(t,n))||r.enumerable});return e};var g=(e,t,o)=>(o=e!=null?u(p(e)):{},s(t||!e||!e.__esModule?i(o,\"default\",{value:e,enumerable:!0}):o,e)),f=e=>s(i({},\"__esModule\",{value:!0}),e);var c=w((q,l)=>{l.exports=_jsx_runtime});var C={};v(C,{default:()=>k,frontmatter:()=>b});var a=g(c()),b={title:\"Contact\",description:\"Book a discovery call, scope your project, and get a clear action plan within 24 hours.\",hero:{lines:[\"Contact\"],body:\"Tell us where you are stuck. We\\u2019ll respond personally with next steps and the fastest path to value.\"},contactMethods:[{icon:\"Clock\",title:\"Response Time\",value:\"Within 24 hours\"},{icon:\"Mail\",title:\"Email\",value:\"hello@aviora.ai\",href:\"mailto:hello@aviora.ai\"},{icon:\"MapPin\",title:\"Locations\",value:\"Serving teams worldwide\"},{icon:\"PhoneCall\",title:\"Direct Line\",value:\"+44 20 4524 7206\",href:\"tel:+442045247206\"}],faqs:[{question:\"How quickly can we start?\",answer:\"Discovery typically takes one week. Implementation begins immediately after alignment on scope and success metrics.\"},{question:\"Do you work with in-house teams?\",answer:\"Yes. We embed alongside your operators, engineers, and product leads to transfer capability as we execute.\"},{question:\"What do engagements cost?\",answer:\"Most programmes range between \\xA312k-\\xA340k per month depending on scope, velocity, and governance requirements.\"}],calendlyUrl:\"https://calendly.com/aviora-ai/discovery\",ctaSection:{title:\"Ready When You Are\",body:\"Share a brief, attach context, or send a loom. We\\u2019ll review, come prepared, and help you build momentum immediately.\",cta:{label:\"Start the Conversation\",href:\"/contact\"}}};function d(e){return(0,a.jsx)(a.Fragment,{})}function x(e={}){let{wrapper:t}=e.components||{};return t?(0,a.jsx)(t,Object.assign({},e,{children:(0,a.jsx)(d,e)})):d(e)}var k=x;return f(C);})();\n;return Component;"
+  },
+  "_id": "pages/contact.mdx",
+  "_raw": {
+    "sourceFilePath": "pages/contact.mdx",
+    "sourceFileName": "contact.mdx",
+    "sourceFileDir": "pages",
+    "contentType": "mdx",
+    "flattenedPath": "pages/contact"
+  },
+  "type": "Page",
+  "slug": "contact",
+  "url": "/contact"
+}

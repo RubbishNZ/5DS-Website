@@ -1,0 +1,372 @@
+[
+  {
+    "title": "About",
+    "description": "Build systems that let teams operate with clarity, speed, and accountability.",
+    "hero": {
+      "lines": [
+        "About",
+        "Aviora"
+      ],
+      "body": "We are operators, engineers, and designers of AI-first organisations. Practical, direct, outcomes-led.",
+      "type": "Hero",
+      "_raw": {}
+    },
+    "ctaSection": {
+      "title": "Let’s Build the System Your Strategy Deserves",
+      "body": "Book a discovery call to audit your current operating model and identify the highest-leverage automation plays.",
+      "cta": {
+        "label": "Book Discovery",
+        "href": "/contact",
+        "type": "Cta",
+        "_raw": {}
+      },
+      "type": "CtaSection",
+      "_raw": {}
+    },
+    "infoCards": [
+      {
+        "label": "Founded",
+        "value": "2024",
+        "type": "InfoCard",
+        "_raw": {}
+      },
+      {
+        "label": "HQ",
+        "value": "Remote-First",
+        "type": "InfoCard",
+        "_raw": {}
+      },
+      {
+        "label": "Focus",
+        "value": "AI Systems",
+        "type": "InfoCard",
+        "_raw": {}
+      },
+      {
+        "label": "Engagements",
+        "value": "Sprint to Scale",
+        "type": "InfoCard",
+        "_raw": {}
+      }
+    ],
+    "story": [
+      "Organisations hit a ceiling when their operations can't keep pace with their ambition. Tools multiply, teams adapt workflows manually, and critical knowledge lives in silos.",
+      "Aviora exists to remove that drag. We build operating systems that align people, data, and automation so the business moves in sync.",
+      "No jargon. No bloated programmes. Just clear strategy, decisive execution, and measurable outcomes."
+    ],
+    "principles": [
+      {
+        "title": "Outcomes First",
+        "description": "Every project begins with the metric that matters. We design systems to move it visibly and repeatedly.",
+        "type": "Principle",
+        "_raw": {}
+      },
+      {
+        "title": "Direct Communication",
+        "description": "We cut through noise with transparent reporting, tight feedback loops, and clear ownership.",
+        "type": "Principle",
+        "_raw": {}
+      },
+      {
+        "title": "Human Systems",
+        "description": "Technology should create leverage for teams. We automate the boring work so people can design, decide, and lead.",
+        "type": "Principle",
+        "_raw": {}
+      },
+      {
+        "title": "Real Partnership",
+        "description": "We build alongside your team, transfer capability, and leave behind assets you control.",
+        "type": "Principle",
+        "_raw": {}
+      }
+    ],
+    "body": {
+      "raw": "",
+      "code": "var Component=(()=>{var u=Object.create;var s=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,h=Object.prototype.hasOwnProperty;var y=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),b=(e,t)=>{for(var a in t)s(e,a,{get:t[a],enumerable:!0})},r=(e,t,a,n)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let i of p(t))!h.call(e,i)&&i!==a&&s(e,i,{get:()=>t[i],enumerable:!(n=m(t,i))||n.enumerable});return e};var v=(e,t,a)=>(a=e!=null?u(g(e)):{},r(t||!e||!e.__esModule?s(a,\"default\",{value:e,enumerable:!0}):a,e)),f=e=>r(s({},\"__esModule\",{value:!0}),e);var c=y((A,l)=>{l.exports=_jsx_runtime});var S={};b(S,{default:()=>k,frontmatter:()=>w});var o=v(c()),w={title:\"About\",description:\"Build systems that let teams operate with clarity, speed, and accountability.\",hero:{lines:[\"About\",\"Aviora\"],body:\"We are operators, engineers, and designers of AI-first organisations. Practical, direct, outcomes-led.\"},infoCards:[{label:\"Founded\",value:\"2024\"},{label:\"HQ\",value:\"Remote-First\"},{label:\"Focus\",value:\"AI Systems\"},{label:\"Engagements\",value:\"Sprint to Scale\"}],story:[\"Organisations hit a ceiling when their operations can't keep pace with their ambition. Tools multiply, teams adapt workflows manually, and critical knowledge lives in silos.\",\"Aviora exists to remove that drag. We build operating systems that align people, data, and automation so the business moves in sync.\",\"No jargon. No bloated programmes. Just clear strategy, decisive execution, and measurable outcomes.\"],principles:[{title:\"Outcomes First\",description:\"Every project begins with the metric that matters. We design systems to move it visibly and repeatedly.\"},{title:\"Direct Communication\",description:\"We cut through noise with transparent reporting, tight feedback loops, and clear ownership.\"},{title:\"Human Systems\",description:\"Technology should create leverage for teams. We automate the boring work so people can design, decide, and lead.\"},{title:\"Real Partnership\",description:\"We build alongside your team, transfer capability, and leave behind assets you control.\"}],ctaSection:{title:\"Let\\u2019s Build the System Your Strategy Deserves\",body:\"Book a discovery call to audit your current operating model and identify the highest-leverage automation plays.\",cta:{label:\"Book Discovery\",href:\"/contact\"}}};function d(e){return(0,o.jsx)(o.Fragment,{})}function x(e={}){let{wrapper:t}=e.components||{};return t?(0,o.jsx)(t,Object.assign({},e,{children:(0,o.jsx)(d,e)})):d(e)}var k=x;return f(S);})();\n;return Component;"
+    },
+    "_id": "pages/about.mdx",
+    "_raw": {
+      "sourceFilePath": "pages/about.mdx",
+      "sourceFileName": "about.mdx",
+      "sourceFileDir": "pages",
+      "contentType": "mdx",
+      "flattenedPath": "pages/about"
+    },
+    "type": "Page",
+    "slug": "about",
+    "url": "/about"
+  },
+  {
+    "title": "Contact",
+    "description": "Book a discovery call, scope your project, and get a clear action plan within 24 hours.",
+    "hero": {
+      "lines": [
+        "Contact"
+      ],
+      "body": "Tell us where you are stuck. We’ll respond personally with next steps and the fastest path to value.",
+      "type": "Hero",
+      "_raw": {}
+    },
+    "ctaSection": {
+      "title": "Ready When You Are",
+      "body": "Share a brief, attach context, or send a loom. We’ll review, come prepared, and help you build momentum immediately.",
+      "cta": {
+        "label": "Start the Conversation",
+        "href": "/contact",
+        "type": "Cta",
+        "_raw": {}
+      },
+      "type": "CtaSection",
+      "_raw": {}
+    },
+    "contactMethods": [
+      {
+        "icon": "Clock",
+        "title": "Response Time",
+        "value": "Within 24 hours",
+        "type": "ContactMethod",
+        "_raw": {}
+      },
+      {
+        "icon": "Mail",
+        "title": "Email",
+        "value": "hello@aviora.ai",
+        "href": "mailto:hello@aviora.ai",
+        "type": "ContactMethod",
+        "_raw": {}
+      },
+      {
+        "icon": "MapPin",
+        "title": "Locations",
+        "value": "Serving teams worldwide",
+        "type": "ContactMethod",
+        "_raw": {}
+      },
+      {
+        "icon": "PhoneCall",
+        "title": "Direct Line",
+        "value": "+44 20 4524 7206",
+        "href": "tel:+442045247206",
+        "type": "ContactMethod",
+        "_raw": {}
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How quickly can we start?",
+        "answer": "Discovery typically takes one week. Implementation begins immediately after alignment on scope and success metrics.",
+        "type": "Faq",
+        "_raw": {}
+      },
+      {
+        "question": "Do you work with in-house teams?",
+        "answer": "Yes. We embed alongside your operators, engineers, and product leads to transfer capability as we execute.",
+        "type": "Faq",
+        "_raw": {}
+      },
+      {
+        "question": "What do engagements cost?",
+        "answer": "Most programmes range between £12k-£40k per month depending on scope, velocity, and governance requirements.",
+        "type": "Faq",
+        "_raw": {}
+      }
+    ],
+    "calendlyUrl": "https://calendly.com/aviora-ai/discovery",
+    "body": {
+      "raw": "",
+      "code": "var Component=(()=>{var u=Object.create;var i=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var w=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),v=(e,t)=>{for(var o in t)i(e,o,{get:t[o],enumerable:!0})},s=(e,t,o,r)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let n of h(t))!y.call(e,n)&&n!==o&&i(e,n,{get:()=>t[n],enumerable:!(r=m(t,n))||r.enumerable});return e};var g=(e,t,o)=>(o=e!=null?u(p(e)):{},s(t||!e||!e.__esModule?i(o,\"default\",{value:e,enumerable:!0}):o,e)),f=e=>s(i({},\"__esModule\",{value:!0}),e);var c=w((q,l)=>{l.exports=_jsx_runtime});var C={};v(C,{default:()=>k,frontmatter:()=>b});var a=g(c()),b={title:\"Contact\",description:\"Book a discovery call, scope your project, and get a clear action plan within 24 hours.\",hero:{lines:[\"Contact\"],body:\"Tell us where you are stuck. We\\u2019ll respond personally with next steps and the fastest path to value.\"},contactMethods:[{icon:\"Clock\",title:\"Response Time\",value:\"Within 24 hours\"},{icon:\"Mail\",title:\"Email\",value:\"hello@aviora.ai\",href:\"mailto:hello@aviora.ai\"},{icon:\"MapPin\",title:\"Locations\",value:\"Serving teams worldwide\"},{icon:\"PhoneCall\",title:\"Direct Line\",value:\"+44 20 4524 7206\",href:\"tel:+442045247206\"}],faqs:[{question:\"How quickly can we start?\",answer:\"Discovery typically takes one week. Implementation begins immediately after alignment on scope and success metrics.\"},{question:\"Do you work with in-house teams?\",answer:\"Yes. We embed alongside your operators, engineers, and product leads to transfer capability as we execute.\"},{question:\"What do engagements cost?\",answer:\"Most programmes range between \\xA312k-\\xA340k per month depending on scope, velocity, and governance requirements.\"}],calendlyUrl:\"https://calendly.com/aviora-ai/discovery\",ctaSection:{title:\"Ready When You Are\",body:\"Share a brief, attach context, or send a loom. We\\u2019ll review, come prepared, and help you build momentum immediately.\",cta:{label:\"Start the Conversation\",href:\"/contact\"}}};function d(e){return(0,a.jsx)(a.Fragment,{})}function x(e={}){let{wrapper:t}=e.components||{};return t?(0,a.jsx)(t,Object.assign({},e,{children:(0,a.jsx)(d,e)})):d(e)}var k=x;return f(C);})();\n;return Component;"
+    },
+    "_id": "pages/contact.mdx",
+    "_raw": {
+      "sourceFilePath": "pages/contact.mdx",
+      "sourceFileName": "contact.mdx",
+      "sourceFileDir": "pages",
+      "contentType": "mdx",
+      "flattenedPath": "pages/contact"
+    },
+    "type": "Page",
+    "slug": "contact",
+    "url": "/contact"
+  },
+  {
+    "title": "Build systems. Make progress.",
+    "description": "AI readiness consulting, automation, and enablement for teams who want results—not fluff.",
+    "hero": {
+      "lines": [
+        "Build",
+        "systems.",
+        "Make",
+        "progress."
+      ],
+      "body": "We design automations and intelligent systems. No fluff. Real work.",
+      "cta": {
+        "label": "Start",
+        "href": "/contact",
+        "type": "Cta",
+        "_raw": {}
+      },
+      "type": "Hero",
+      "_raw": {}
+    },
+    "pillars": [
+      {
+        "title": "Strategic Modernization",
+        "description": "We assess your systems, processes, and readiness—then design a pragmatic roadmap for evolution.",
+        "type": "Pillar",
+        "_raw": {}
+      },
+      {
+        "title": "Human-Centered Enablement",
+        "description": "Training and tools that amplify your team's potential, not replace it.",
+        "type": "Pillar",
+        "_raw": {}
+      },
+      {
+        "title": "Responsible Innovation",
+        "description": "Ethical frameworks and governance that protect your people, data, and reputation.",
+        "type": "Pillar",
+        "_raw": {}
+      },
+      {
+        "title": "Tangible Progress",
+        "description": "Intelligent solutions that deliver measurable value and competitive advantage.",
+        "type": "Pillar",
+        "_raw": {}
+      }
+    ],
+    "proofPoints": [
+      {
+        "title": "40% Faster Time-to-Value",
+        "description": "Organizations accelerate through our readiness programs",
+        "type": "ProofPoint",
+        "_raw": {}
+      },
+      {
+        "title": "90%+ Confidence",
+        "description": "Teams report after completing our enablement training",
+        "type": "ProofPoint",
+        "_raw": {}
+      },
+      {
+        "title": "6-12 Month ROI",
+        "description": "Automation projects consistently deliver within first year",
+        "type": "ProofPoint",
+        "_raw": {}
+      }
+    ],
+    "ctaSection": {
+      "title": "Talk.",
+      "body": "Book a meeting. Discuss your project. Get started.",
+      "cta": {
+        "label": "Contact",
+        "href": "/contact",
+        "type": "Cta",
+        "_raw": {}
+      },
+      "type": "CtaSection",
+      "_raw": {}
+    },
+    "body": {
+      "raw": "\nWelcome to Aviora. We help teams adopt intelligent systems with clarity, momentum, and measurable outcomes.",
+      "code": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var h=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),y=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},r=(t,e,n,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of u(e))!f.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(s=p(e,o))||s.enumerable});return t};var b=(t,e,n)=>(n=t!=null?m(g(t)):{},r(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),v=t=>r(a({},\"__esModule\",{value:!0}),t);var c=h((C,l)=>{l.exports=_jsx_runtime});var M={};y(M,{default:()=>x,frontmatter:()=>j});var i=b(c()),j={title:\"Build systems. Make progress.\",description:\"AI readiness consulting, automation, and enablement for teams who want results\\u2014not fluff.\",hero:{lines:[\"Build\",\"systems.\",\"Make\",\"progress.\"],body:\"We design automations and intelligent systems. No fluff. Real work.\",cta:{label:\"Start\",href:\"/contact\"}},pillars:[{title:\"Strategic Modernization\",description:\"We assess your systems, processes, and readiness\\u2014then design a pragmatic roadmap for evolution.\"},{title:\"Human-Centered Enablement\",description:\"Training and tools that amplify your team's potential, not replace it.\"},{title:\"Responsible Innovation\",description:\"Ethical frameworks and governance that protect your people, data, and reputation.\"},{title:\"Tangible Progress\",description:\"Intelligent solutions that deliver measurable value and competitive advantage.\"}],proofPoints:[{title:\"40% Faster Time-to-Value\",description:\"Organizations accelerate through our readiness programs\"},{title:\"90%+ Confidence\",description:\"Teams report after completing our enablement training\"},{title:\"6-12 Month ROI\",description:\"Automation projects consistently deliver within first year\"}],ctaSection:{title:\"Talk.\",body:\"Book a meeting. Discuss your project. Get started.\",cta:{label:\"Contact\",href:\"/contact\"}}};function d(t){let e=Object.assign({p:\"p\"},t.components);return(0,i.jsx)(e.p,{children:\"Welcome to Aviora. We help teams adopt intelligent systems with clarity, momentum, and measurable outcomes.\"})}function w(t={}){let{wrapper:e}=t.components||{};return e?(0,i.jsx)(e,Object.assign({},t,{children:(0,i.jsx)(d,t)})):d(t)}var x=w;return v(M);})();\n;return Component;"
+    },
+    "_id": "pages/home.mdx",
+    "_raw": {
+      "sourceFilePath": "pages/home.mdx",
+      "sourceFileName": "home.mdx",
+      "sourceFileDir": "pages",
+      "contentType": "mdx",
+      "flattenedPath": "pages/home"
+    },
+    "type": "Page",
+    "slug": "home",
+    "url": "/"
+  },
+  {
+    "title": "Services",
+    "description": "AI-native operating systems that remove friction, accelerate execution, and create measurable impact.",
+    "hero": {
+      "lines": [
+        "Systems",
+        "That Ship"
+      ],
+      "body": "We architect automation, intelligence, and enablement infrastructure so your teams can deliver faster with less waste.",
+      "cta": {
+        "label": "Plan Your Build",
+        "href": "/contact",
+        "type": "Cta",
+        "_raw": {}
+      },
+      "type": "Hero",
+      "_raw": {}
+    },
+    "ctaSection": {
+      "title": "Ship Your Next System in 30 Days",
+      "body": "Book a discovery call. We will audit your current stack, design the operating model, and give you a clear execution roadmap.",
+      "cta": {
+        "label": "Schedule Discovery",
+        "href": "/contact",
+        "type": "Cta",
+        "_raw": {}
+      },
+      "type": "CtaSection",
+      "_raw": {}
+    },
+    "services": [
+      {
+        "order": 1,
+        "title": "AI Operating System",
+        "problem": "Fragmented processes, scattered data, and manual decision points slow teams down and hide the real bottlenecks.",
+        "approach": "Map your workflows, design the canonical data model, and deploy orchestrated automations that connect product, sales, marketing, and operations.",
+        "outcomes": [
+          "Single source of truth for signals, decisions, and accountability.",
+          "Automated task routing, approvals, and reporting across teams.",
+          "Predictable execution cadence with real-time visibility for leadership."
+        ],
+        "type": "Service",
+        "_raw": {}
+      },
+      {
+        "order": 2,
+        "title": "Intelligent Delivery Pods",
+        "problem": "Critical initiatives stall because teams lack focused capacity and the right leverage from AI copilots.",
+        "approach": "Embed cross-functional pods, build bespoke copilots, and codify operating rhythms that keep outcomes on track.",
+        "outcomes": [
+          "Rapid validation cycles with measurable KPI movement every sprint.",
+          "Purpose-built copilots that surface insight and automate repetitive effort.",
+          "Operational playbooks that scale without adding headcount."
+        ],
+        "type": "Service",
+        "_raw": {}
+      },
+      {
+        "order": 3,
+        "title": "Automation Control Tower",
+        "problem": "Ad-hoc scripts and point solutions introduce risk, break silently, and erode trust across the organisation.",
+        "approach": "Centralise automation management, implement observability, and layer governance so the business can scale with confidence.",
+        "outcomes": [
+          "Monitored automations with alerting, runbooks, and ownership.",
+          "Guardrails for compliance, privacy, and ethical AI usage.",
+          "Continuous improvement pipeline driven by data, not guesswork."
+        ],
+        "type": "Service",
+        "_raw": {}
+      }
+    ],
+    "body": {
+      "raw": "",
+      "code": "var Component=(()=>{var u=Object.create;var n=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var h=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var g=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),b=(e,t)=>{for(var a in t)n(e,a,{get:t[a],enumerable:!0})},s=(e,t,a,r)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let i of p(t))!y.call(e,i)&&i!==a&&n(e,i,{get:()=>t[i],enumerable:!(r=m(t,i))||r.enumerable});return e};var f=(e,t,a)=>(a=e!=null?u(h(e)):{},s(t||!e||!e.__esModule?n(a,\"default\",{value:e,enumerable:!0}):a,e)),v=e=>s(n({},\"__esModule\",{value:!0}),e);var l=g((C,c)=>{c.exports=_jsx_runtime});var S={};b(S,{default:()=>x,frontmatter:()=>w});var o=f(l()),w={title:\"Services\",description:\"AI-native operating systems that remove friction, accelerate execution, and create measurable impact.\",hero:{lines:[\"Systems\",\"That Ship\"],body:\"We architect automation, intelligence, and enablement infrastructure so your teams can deliver faster with less waste.\",cta:{label:\"Plan Your Build\",href:\"/contact\"}},services:[{order:1,title:\"AI Operating System\",problem:\"Fragmented processes, scattered data, and manual decision points slow teams down and hide the real bottlenecks.\",approach:\"Map your workflows, design the canonical data model, and deploy orchestrated automations that connect product, sales, marketing, and operations.\",outcomes:[\"Single source of truth for signals, decisions, and accountability.\",\"Automated task routing, approvals, and reporting across teams.\",\"Predictable execution cadence with real-time visibility for leadership.\"]},{order:2,title:\"Intelligent Delivery Pods\",problem:\"Critical initiatives stall because teams lack focused capacity and the right leverage from AI copilots.\",approach:\"Embed cross-functional pods, build bespoke copilots, and codify operating rhythms that keep outcomes on track.\",outcomes:[\"Rapid validation cycles with measurable KPI movement every sprint.\",\"Purpose-built copilots that surface insight and automate repetitive effort.\",\"Operational playbooks that scale without adding headcount.\"]},{order:3,title:\"Automation Control Tower\",problem:\"Ad-hoc scripts and point solutions introduce risk, break silently, and erode trust across the organisation.\",approach:\"Centralise automation management, implement observability, and layer governance so the business can scale with confidence.\",outcomes:[\"Monitored automations with alerting, runbooks, and ownership.\",\"Guardrails for compliance, privacy, and ethical AI usage.\",\"Continuous improvement pipeline driven by data, not guesswork.\"]}],ctaSection:{title:\"Ship Your Next System in 30 Days\",body:\"Book a discovery call. We will audit your current stack, design the operating model, and give you a clear execution roadmap.\",cta:{label:\"Schedule Discovery\",href:\"/contact\"}}};function d(e){return(0,o.jsx)(o.Fragment,{})}function k(e={}){let{wrapper:t}=e.components||{};return t?(0,o.jsx)(t,Object.assign({},e,{children:(0,o.jsx)(d,e)})):d(e)}var x=k;return v(S);})();\n;return Component;"
+    },
+    "_id": "pages/services.mdx",
+    "_raw": {
+      "sourceFilePath": "pages/services.mdx",
+      "sourceFileName": "services.mdx",
+      "sourceFileDir": "pages",
+      "contentType": "mdx",
+      "flattenedPath": "pages/services"
+    },
+    "type": "Page",
+    "slug": "services",
+    "url": "/services"
+  }
+]
