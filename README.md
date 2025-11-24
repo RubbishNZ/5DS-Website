@@ -1,73 +1,78 @@
-# Welcome to your Lovable project
+# Aviora — Systems, Automation, Training
 
-## Project info
+Marketing site and lightweight CMS for Aviora, a consultancy focused on strategic modernization, intelligent automation, and workforce enablement.
 
-**URL**: https://lovable.dev/projects/4f2865b0-1ada-4b1d-b979-86164e7e2a27
+Live sections include Home, Services, Case Studies, About, and Contact. A protected CMS page allows authenticated admins to edit case studies stored in Supabase.
 
-## How can I edit this code?
+## Tech Stack
 
-There are several ways of editing your application.
+- React 18 + TypeScript
+- Vite
+- Tailwind CSS + shadcn/ui
+- Framer Motion
+- React Router
+- TanStack Query
+- Supabase (auth + Postgres)
 
-**Use Lovable**
+## Project Structure
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4f2865b0-1ada-4b1d-b979-86164e7e2a27) and start prompting.
+- `src/pages` — Route pages (Home, Services, CaseStudies, About, Contact, Auth, CMS)
+- `src/components` — UI and layout components (Navigation, Footer, etc.)
+- `src/integrations/supabase` — Supabase client and generated types
+- `supabase/migrations` — SQL migrations (case_studies table and policies)
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started
 
-**Use your preferred IDE**
+Prerequisites:
+- Node.js 18+ (or Bun). Recommended: Node 20 LTS.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+1) Install dependencies
+```
+npm install
+# or
+bun install
 ```
 
-**Edit a file directly in GitHub**
+2) Configure environment variables
+Create a `.env` file in the project root:
+```
+VITE_SUPABASE_URL=https://YOUR-PROJECT.ref.supabase.co
+VITE_SUPABASE_PUBLISHABLE_KEY=YOUR_SUPABASE_ANON_KEY
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3) Run the dev server
+```
+npm run dev
+```
+The app will be available at http://localhost:8080 (see `vite.config.ts`).
 
-**Use GitHub Codespaces**
+## Database and CMS
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This project uses Supabase for authentication and to store Case Studies.
 
-## What technologies are used for this project?
+- Apply the migration in `supabase/migrations/` using the Supabase SQL Editor or CLI to create the `case_studies` table and RLS policies.
+- Visit `/auth` to sign up or log in (Supabase email/password). After login, `/cms` provides an admin interface to edit case studies.
 
-This project is built with:
+## Scripts
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- `npm run dev` — Start the Vite dev server
+- `npm run build` — Create a production build
+- `npm run preview` — Preview the production build
+- `npm run lint` — Lint the project
 
-## How can I deploy this project?
+## Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/4f2865b0-1ada-4b1d-b979-86164e7e2a27) and click on Share -> Publish.
+Any static host that supports Vite builds works (Vercel, Netlify, Cloudflare Pages, etc.).
 
-## Can I connect a custom domain to my Lovable project?
+Basic steps:
+1) Set env vars `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` in your host.
+2) Build: `npm run build`
+3) Deploy the `dist/` folder.
 
-Yes, you can!
+## Branding
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Project copy and UI are branded as “Aviora”. Update content in `src/pages` as needed.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## License
+
+All rights reserved.
